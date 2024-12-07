@@ -1,0 +1,11 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource>
+
+    <file>..\icons_setup\icons\logo.png</file>
+    <file>..\icons_setup\icons\logo2.png</file>
+    <file>..\icons_setup\icons\minus.png</file>
+    <file>..\icons_setup\icons\plus.png</file>
+
+  </qresource>
+</RCC>
