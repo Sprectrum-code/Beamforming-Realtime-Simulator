@@ -25,8 +25,11 @@ class BeamViewer(pg.ImageView):
         for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
             distance = np.sqrt((x_mesh - transmitter.x_posision)**2 + (y_mesh - transmitter.y_posision)**2)
             amplitude += np.sin(self.current_phased_array.current_frequency *2*np.pi *distance + i*self.current_phased_array.phase_shift)
-            self.add_red_dot( (transmitter.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2 ,
-                              transmitter.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range)
+            if(self.current_phased_array.geometry == "Linear"):
+                scaled_x = (transmitter.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2
+                scaled_y = transmitter.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range
+                self.add_red_dot(scaled_x, scaled_y)
+            
         self.current_phased_array.wave_map = amplitude
         self.setImage(amplitude.T)
         self.getView().autoRange()
@@ -82,3 +85,9 @@ class BeamViewer(pg.ImageView):
 
         # # Show the image in the window
         # self.show()
+        
+        
+        
+        # Not USED Piece of Codes
+        # (transmitter.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2 ,
+        #                      transmitter.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range
