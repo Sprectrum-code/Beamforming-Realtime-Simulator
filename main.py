@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame, QVBoxLayout, QSlider, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame, QVBoxLayout, QSlider,QComboBox ,QPushButton
 from PyQt5.uic import loadUi
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtCore import Qt
@@ -62,6 +62,20 @@ class MainWindow(QMainWindow):
         self.remove_transmitter_button = self.findChild(QPushButton , "minusButton")
         self.remove_transmitter_button.clicked.connect(self.remove_transmitter)
         
+        self.mode_combobox = self.findChild(QComboBox , "comboBox")
+        self.mode_combobox.currentIndexChanged.connect(self.set_mode)
+        
+        self.radius_slider = self.findChild(QSlider , "radiusSlider")
+        self.radius_slider.setRange(1,10)
+        self.radius_slider.sliderMoved.connect(self.set_radius)
+        
+        self.mode_combobox = self.findChild(QComboBox , "comboBox")
+        self.mode_combobox.currentIndexChanged.connect(self.set_mode)
+        
+        self.radius_slider = self.findChild(QSlider , "radiusSlider")
+        self.radius_slider.setRange(1,10)
+        self.radius_slider.sliderMoved.connect(self.set_radius)
+        
         self.controller = Controller(self.phased_array,self.beam_Viewer,self.profile_viewer)
         self.controller.phased_array = self.phased_array
         self.controller.beam_viewer = self.beam_Viewer
@@ -81,22 +95,43 @@ class MainWindow(QMainWindow):
         self.phased_array.phase_shift = deepcopy(new_phase)
         self.controller.set_current_beam()
     
-    def add_transmitter(self):
-        distance_between_transmitters = self.distance_slider.sliderPosition()
-        self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
-        self.controller.phased_array.add_transmitter(distance_between_transmitters)
-        self.controller.set_current_beam()
-    
-    def set_distance_between_transmitters(self):
-        distance_between_transmitters = self.distance_slider.sliderPosition()
-        self.controller.phased_array.calcualte_distance(distance_between_transmitters)
+    def set_mode(self , new_mode_index):
+        if(new_mode_index == 0):
+            self.controller.phased_array.geometry = "Linear"
+        elif(new_mode_index == 1):
+            self.controller.phased_array.geometry = "Curvlinear"
+        self.add_transmitter()
+        self.remove_transmitter()
         self.controller.set_current_beam()
 
+    def set_distance_between_transmitters(self):
+        distance_between_transmitters = self.distance_slider.sliderPosition()
+        circle_radius = self.radius_slider.sliderPosition()
+        if(self.controller.phased_array.geometry == "Linear"):
+            self.controller.calculate_linear_distance(distance_between_transmitters)
+        elif (self.controller.phased_array.geometry == "Curvlinear"):
+            self.controller.calcualte_angles(distance_between_transmitters ,circle_radius )
+    
+    def set_radius(self):
+        circle_radius = self.radius_slider.sliderPosition()
+        distance_between_transmitters = self.distance_slider.sliderPosition()
+        if(self.controller.phased_array.geometry == "Linear"):
+            pass
+        elif (self.controller.phased_array.geometry == "Curvlinear"):
+            self.controller.phased_array.calcualte_angles(distance_between_transmitters , circle_radius)
+        self.controller.set_current_beam()
+
+    def add_transmitter(self):
+        circle_radius = self.radius_slider.sliderPosition()
+        distance_between_transmitters = self.distance_slider.sliderPosition()
+        self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
+        self.controller.add_transmitter(distance_between_transmitters , circle_radius)
+            
     def remove_transmitter(self):
+        circle_radius = self.radius_slider.sliderPosition()
         distance_between_transmitters = self.distance_slider.sliderPosition()
         self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) - 1)}')
-        self.controller.phased_array.remove_transmitter(distance_between_transmitters)
-        self.controller.set_current_beam()
+        self.controller.remove_transmitter(distance_between_transmitters ,circle_radius)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
