@@ -11,6 +11,8 @@ from classes.controller import Controller
 from classes.profileViewer import ProfileViewer
 from copy import deepcopy
 import numpy as np
+from classes.transmetter import Transmitter
+from classes.reciver import Reciver
 compile_qrc()
 
 
@@ -64,6 +66,7 @@ class MainWindow(QMainWindow):
         self.distance_slider.setMaximum(20)
         self.distance_slider.valueChanged.connect(self.set_distance_between_transmitters)
         self.number_of_transmetters_label = self.findChild(QLabel, "number_of_transmetters_label")
+        self.number_of__recievers_label = self.findChild(QLabel, "recieversNumberLabel")
         
         self.add_transmitter_button = self.findChild(QPushButton , "plusButton")
         self.add_transmitter_button.clicked.connect(self.add_transmitter)
@@ -85,6 +88,11 @@ class MainWindow(QMainWindow):
         self.radius_slider = self.findChild(QSlider , "radiusSlider")
         self.radius_slider.setRange(1,10)
         self.radius_slider.sliderMoved.connect(self.set_radius)
+        
+        self.reciver_distance_slider = self.findChild(QSlider, "distanceRecievingSlider")
+        self.reciver_distance_slider.setMinimum(0)
+        self.reciver_distance_slider.setMaximum(20)
+        self.reciver_distance_slider.valueChanged.connect(self.set_distance_between_transmitters)
         
         
         
@@ -140,6 +148,12 @@ class MainWindow(QMainWindow):
         distance_between_transmitters = self.get_distance_slider_position()
         self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
         self.controller.add_transmitter(distance_between_transmitters , circle_radius)
+        
+    def add_reciever(self):
+        circle_radius = self.radius_slider.sliderPosition()
+        distance_between_transmitters = self.get_distance_slider_position()
+        self.number_of__recievers_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
+        self.controller.add_transmitter(distance_between_transmitters , circle_radius)
             
     def remove_transmitter(self):
         circle_radius = self.radius_slider.sliderPosition()
@@ -150,8 +164,11 @@ class MainWindow(QMainWindow):
         
     def get_distance_slider_position(self):
         list_of_lambda_ratios = [i/2 for i in range(0,21)]
-        print(list_of_lambda_ratios[self.distance_slider.value()])
-        return list_of_lambda_ratios[self.distance_slider.value()]
+        # print(list_of_lambda_ratios[self.distance_slider.value()])
+        if self.transmitterRecieverModes.currentText() == "Transmitting Mode":
+            return list_of_lambda_ratios[self.distance_slider.value()]
+        else:
+            return list_of_lambda_ratios[self.reciver_distance_slider.value()]
     
     def get_frquency_slider_position(self):
         list_of_frequencies = [i for i in range(1,21)]
@@ -162,6 +179,17 @@ class MainWindow(QMainWindow):
             self.modesStack.setCurrentIndex(1)
         if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
             self.modesStack.setCurrentIndex(0)
+            
+            
+        if self.transmitterRecieverModes.currentText == 'Transmitting Mode':
+            self.phased_array.transmitters_list.clear()
+            self.phased_array.transmitters_list.append(Transmitter())
+            self.number_of_transmetters_label.setText('1')
+        else:
+            self.phased_array.transmitters_list.clear()
+            self.phased_array.transmitters_list.append(Reciver())
+            self.number_of__recievers_label.setText('1')
+            
         self.controller.set_current_beam()
 
 if __name__ == '__main__':

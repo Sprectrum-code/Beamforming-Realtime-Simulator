@@ -1,5 +1,6 @@
 import numpy as np
 from classes.transmetter import Transmitter
+from classes.reciver import Reciver
 class PhasedArray():
     def __init__(self):
         self.current_frequency = 1
@@ -13,14 +14,21 @@ class PhasedArray():
         self.x_grid_size = 1000
         self.y_grid_size = 1000
         self.wave_map = np.zeros((1000, 1000))
-        self.type_of_array = "transmitters"
+        self.current_mode = "Transmitting Mode"
         
     def add_transmitter(self , distance_between_transmitters ,radius):
-        self.transmitters_list.append(Transmitter())
-        if(self.geometry == "Linear"):
-            self.calcualte_linear_distance(distance_between_transmitters)
-        if(self.geometry == "Curvlinear"):
-            self.calcualte_angles(distance_between_transmitters , radius)
+        if self.current_mode == "Transmitting Mode":
+            self.transmitters_list.append(Transmitter())
+            if(self.geometry == "Linear"):
+                self.calcualte_linear_distance(distance_between_transmitters)
+            if(self.geometry == "Curvlinear"):
+                self.calcualte_angles(distance_between_transmitters , radius)
+        else:
+            self.transmitters_list.append(Reciver())
+            if(self.geometry == "Linear"):
+                self.calcualte_linear_distance(distance_between_transmitters)
+            if(self.geometry == "Curvlinear"):
+                self.calcualte_angles(distance_between_transmitters , radius)
             
     def remove_transmitter(self , distance_between_transmitters , radius):
         self.transmitters_list.pop()
