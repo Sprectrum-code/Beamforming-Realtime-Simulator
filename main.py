@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame, QVBoxLayout, QSlider,QComboBox ,QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame, QVBoxLayout, QSlider, QComboBox, QPushButton, QStackedWidget
 from PyQt5.uic import loadUi
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtCore import Qt
@@ -26,7 +26,14 @@ class MainWindow(QMainWindow):
         self.logoLabel = self.findChild(QLabel, 'logoLabel')
         self.logoLabel.setPixmap(logoPixmap)
         self.logoLabel.setAlignment(Qt.AlignCenter) 
+
+        self.modesStack = self.findChild(QStackedWidget, 'modesStack')
+        self.modesStack.setCurrentIndex(1)
         
+        self.transmitterRecieverModes = self.findChild(QComboBox, 'comboBox_2') 
+        self.transmitterRecieverModes.currentIndexChanged.connect(self.change_mode)
+
+
         self.constructive_map_viewer_frame = self.findChild(QFrame,"constructiveMapFrame")
         self.constructive_map_viewer_frame_layout = QVBoxLayout()
         self.constructive_map_viewer_frame.setLayout(self.constructive_map_viewer_frame_layout)
@@ -56,7 +63,7 @@ class MainWindow(QMainWindow):
         self.distance_slider.setMinimum(0)
         self.distance_slider.setMaximum(20)
         self.distance_slider.valueChanged.connect(self.set_distance_between_transmitters)
-        self.number_of_transmetters_label = self.findChild(QLabel, "label_9")
+        self.number_of_transmetters_label = self.findChild(QLabel, "number_of_transmetters_label")
         
         self.add_transmitter_button = self.findChild(QPushButton , "plusButton")
         self.add_transmitter_button.clicked.connect(self.add_transmitter)
@@ -144,6 +151,12 @@ class MainWindow(QMainWindow):
     def get_frquency_slider_position(self):
         list_of_frequencies = [i for i in range(1,21)]
         return list_of_frequencies[self.frequency_slider.value()]
+
+    def change_mode(self):
+        if self.transmitterRecieverModes.currentText() == 'Transmitting Mode':
+            self.modesStack.setCurrentIndex(1)
+        if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
+            self.modesStack.setCurrentIndex(0)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
