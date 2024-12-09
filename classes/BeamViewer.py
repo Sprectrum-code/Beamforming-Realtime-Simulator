@@ -7,6 +7,7 @@ class BeamViewer(pg.ImageView):
     def __init__(self):
         super().__init__()
         self.current_phased_array = PhasedArray()
+        self.transmitter_positions= []
         self.getView().setBackgroundColor("#1E293B")
         self.ui.histogram.hide()
         self.ui.roiBtn.hide()
@@ -20,14 +21,29 @@ class BeamViewer(pg.ImageView):
         y_line = np.linspace(0, self.current_phased_array.current_y_range, self.current_phased_array.y_grid_size)
         x_mesh, y_mesh = np.meshgrid(x_line,y_line)
         amplitude = np.zeros_like(x_mesh)
+        self.clear_red_dots()
         for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
             distance = np.sqrt((x_mesh - transmitter.x_posision)**2 + (y_mesh - transmitter.y_posision)**2)
-            amplitude += np.sin(self.current_phased_array.current_frequency *2*np.pi *distance + (i+1)*self.current_phased_array.phase_shift)
+            amplitude += np.sin(self.current_phased_array.current_frequency *2*np.pi *distance + i*self.current_phased_array.phase_shift)
+            self.add_red_dot( (transmitter.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2 ,
+                              transmitter.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range)
         self.current_phased_array.wave_map = amplitude
         self.setImage(amplitude.T)
         self.getView().autoRange()
             
-
+    def add_red_dot(self , x,y):
+        scatter = pg.ScatterPlotItem(
+            pos=np.array([[x, y]]),  
+            size=10,               
+            brush=pg.mkBrush('r'), 
+            pen=None               
+        )
+        self.getView().addItem(scatter)
+        self.transmitter_positions.append(scatter)
+        
+    def clear_red_dots(self):
+        for red_dot in self.transmitter_positions:
+            self.getView().removeItem(red_dot)
         # # Transmitter position and grid setup
         # x_t, y_t = 0, 0  # Transmitter at the origin
         # grid_size = 1000  # Size of the grid (nxn)
