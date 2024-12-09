@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame, QVBoxLayout, QSlider
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QFrame, QVBoxLayout, QSlider, QPushButton
 from PyQt5.uic import loadUi
 from PyQt5.QtGui import QIcon, QPixmap
 from PyQt5.QtCore import Qt
@@ -53,7 +53,14 @@ class MainWindow(QMainWindow):
         self.frequency_slider.valueChanged.connect(self.change_frequency)
         
         self.distance_slider = self.findChild(QSlider, "distanceSlider")
+        self.distance_slider.sliderMoved.connect(self.set_distance_between_transmitters)
         self.number_of_transmetters_label = self.findChild(QLabel, "label_9")
+        
+        self.add_transmitter_button = self.findChild(QPushButton , "plusButton")
+        self.add_transmitter_button.clicked.connect(self.add_transmitter)
+        
+        self.remove_transmitter_button = self.findChild(QPushButton , "minusButton")
+        self.remove_transmitter_button.clicked.connect(self.remove_transmitter)
         
         self.controller = Controller(self.phased_array,self.beam_Viewer)
         self.controller.phased_array = self.phased_array
@@ -72,9 +79,23 @@ class MainWindow(QMainWindow):
         new_phase = self.phase_shift_values[self.phase_shift_slider.value()]
         self.phased_array.phase_shift = deepcopy(new_phase)
         self.controller.set_current_beam()
-         
+    
+    def add_transmitter(self):
+        distance_between_transmitters = self.distance_slider.sliderPosition()
+        self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
+        self.controller.phased_array.add_transmitter(distance_between_transmitters)
+        self.controller.set_current_beam()
+    
+    def set_distance_between_transmitters(self):
+        distance_between_transmitters = self.distance_slider.sliderPosition()
+        self.controller.phased_array.calcualte_distance(distance_between_transmitters)
+        self.controller.set_current_beam()
 
-        
+    def remove_transmitter(self):
+        distance_between_transmitters = self.distance_slider.sliderPosition()
+        self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) - 1)}')
+        self.controller.phased_array.remove_transmitter(distance_between_transmitters)
+        self.controller.set_current_beam()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

@@ -22,7 +22,7 @@ class BeamViewer(pg.ImageView):
         amplitude = np.zeros_like(x_mesh)
         for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
             distance = np.sqrt((x_mesh - transmitter.x_posision)**2 + (y_mesh - transmitter.y_posision)**2)
-            amplitude += np.sin(self.current_phased_array.current_frequency *2*np.pi *distance + i*self.current_phased_array.phase_shift)
+            amplitude += np.sin(self.current_phased_array.current_frequency *2*np.pi *distance + (i+1)*self.current_phased_array.phase_shift)
         self.current_phased_array.wave_map = amplitude
         self.setImage(amplitude.T)
         self.getView().autoRange()
