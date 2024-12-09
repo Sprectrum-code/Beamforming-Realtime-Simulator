@@ -155,8 +155,10 @@ class MainWindow(QMainWindow):
     def change_mode(self):
         if self.transmitterRecieverModes.currentText() == 'Transmitting Mode':
             self.modesStack.setCurrentIndex(1)
+            self.controller.set_current_mode('Transmitting Mode')
         if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
             self.modesStack.setCurrentIndex(0)
+            self.controller.set_current_mode('Recieving Mode')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
