@@ -62,9 +62,10 @@ class MainWindow(QMainWindow):
         self.remove_transmitter_button = self.findChild(QPushButton , "minusButton")
         self.remove_transmitter_button.clicked.connect(self.remove_transmitter)
         
-        self.controller = Controller(self.phased_array,self.beam_Viewer)
+        self.controller = Controller(self.phased_array,self.beam_Viewer,self.profile_viewer)
         self.controller.phased_array = self.phased_array
         self.controller.beam_viewer = self.beam_Viewer
+        self.controller.profile_viewer = self.profile_viewer
         self.beam_Viewer.current_phased_array = self.phased_array
         self.profile_viewer.current_phased_array = self.phased_array
         
