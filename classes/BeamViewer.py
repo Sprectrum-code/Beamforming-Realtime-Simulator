@@ -2,6 +2,7 @@ import pyqtgraph as pg
 import numpy as np
 from PyQt5.QtWidgets import QApplication
 from classes.phasedArray import PhasedArray
+from classes.transmetter import Transmitter
 
 class BeamViewer(pg.ImageView):
     def __init__(self):
@@ -14,6 +15,7 @@ class BeamViewer(pg.ImageView):
         self.ui.menuBtn.hide()
         self.getView().invertY(False)
         self.getView().setAspectLocked(False)
+        self.current_mode = "Transmitting Mode"
         
     def update_map(self):
         self.clear()
@@ -22,13 +24,23 @@ class BeamViewer(pg.ImageView):
         x_mesh, y_mesh = np.meshgrid(x_line,y_line)
         amplitude = np.zeros_like(x_mesh)
         self.clear_red_dots()
-        for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
-            distance = np.sqrt((x_mesh - transmitter.x_posision)**2 + (y_mesh - transmitter.y_posision)**2)
-            amplitude += np.sin(self.current_phased_array.current_frequency *2*np.pi + i*self.current_phased_array.phase_shift + 2*np.pi*self.current_phased_array.current_frequency*distance)
-            if(self.current_phased_array.geometry == "Linear"):
-                scaled_x = (transmitter.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2
-                scaled_y = transmitter.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range
-                self.add_red_dot(scaled_x, scaled_y)
+        print(self.current_mode)
+        if self.current_mode == "Transmitting Mode":
+            for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
+                distance = np.sqrt((x_mesh - transmitter.x_posision)**2 + (y_mesh - transmitter.y_posision)**2)
+                amplitude += np.sin(self.current_phased_array.current_frequency *2*np.pi + i*self.current_phased_array.phase_shift + 2*np.pi*self.current_phased_array.current_frequency*distance)
+                if(self.current_phased_array.geometry == "Linear"):
+                    scaled_x = (transmitter.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2
+                    scaled_y = transmitter.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range
+                    self.add_red_dot(scaled_x, scaled_y)
+        else:# this can be not static 
+            temp_transmitter = Transmitter()
+            temp_transmitter.x_posision = 50
+            temp_transmitter.y_posision = 50
+            distance = np.sqrt((x_mesh - temp_transmitter.x_posision)**2 + (y_mesh - temp_transmitter.y_posision)**2)
+            amplitude += np.sin(2 *2*np.pi + 2*np.pi*2*distance)
+            
+            
             
         self.current_phased_array.wave_map = amplitude
         self.setImage(amplitude.T)

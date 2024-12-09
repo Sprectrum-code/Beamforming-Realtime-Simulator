@@ -11,6 +11,8 @@ from classes.controller import Controller
 from classes.profileViewer import ProfileViewer
 from copy import deepcopy
 import numpy as np
+from classes.transmetter import Transmitter
+from classes.reciver import Reciver
 compile_qrc()
 
 
@@ -64,6 +66,7 @@ class MainWindow(QMainWindow):
         self.distance_slider.setMaximum(20)
         self.distance_slider.valueChanged.connect(self.set_distance_between_transmitters)
         self.number_of_transmetters_label = self.findChild(QLabel, "number_of_transmetters_label")
+        self.number_of__recievers_label = self.findChild(QLabel, "recieversNumberLabel")
         
         self.add_transmitter_button = self.findChild(QPushButton , "plusButton")
         self.add_transmitter_button.clicked.connect(self.add_transmitter)
@@ -80,15 +83,25 @@ class MainWindow(QMainWindow):
         
         self.mode_combobox = self.findChild(QComboBox , "comboBox")
         self.mode_combobox.currentIndexChanged.connect(self.set_mode)
+        # self.mode_combobox.currentText()
         
         self.radius_slider = self.findChild(QSlider , "radiusSlider")
         self.radius_slider.setRange(1,10)
         self.radius_slider.sliderMoved.connect(self.set_radius)
         
+        self.reciver_distance_slider = self.findChild(QSlider, "distanceRecievingSlider")
+        self.reciver_distance_slider.setMinimum(0)
+        self.reciver_distance_slider.setMaximum(20)
+        self.reciver_distance_slider.valueChanged.connect(self.set_distance_between_transmitters)
+        
+        
+        
+        
         self.controller = Controller(self.phased_array,self.beam_Viewer,self.profile_viewer)
         self.controller.phased_array = self.phased_array
         self.controller.beam_viewer = self.beam_Viewer
         self.controller.profile_viewer = self.profile_viewer
+        self.controller.mode_box = self.transmitterRecieverModes
         self.beam_Viewer.current_phased_array = self.phased_array
         self.profile_viewer.current_phased_array = self.phased_array
         self.number_of_transmetters_label.setText('1')
@@ -135,6 +148,12 @@ class MainWindow(QMainWindow):
         distance_between_transmitters = self.get_distance_slider_position()
         self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
         self.controller.add_transmitter(distance_between_transmitters , circle_radius)
+        
+    def add_reciever(self):
+        circle_radius = self.radius_slider.sliderPosition()
+        distance_between_transmitters = self.get_distance_slider_position()
+        self.number_of__recievers_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
+        self.controller.add_transmitter(distance_between_transmitters , circle_radius)
             
     def remove_transmitter(self):
         circle_radius = self.radius_slider.sliderPosition()
@@ -145,8 +164,11 @@ class MainWindow(QMainWindow):
         
     def get_distance_slider_position(self):
         list_of_lambda_ratios = [i/2 for i in range(0,21)]
-        print(list_of_lambda_ratios[self.distance_slider.value()])
-        return list_of_lambda_ratios[self.distance_slider.value()]
+        # print(list_of_lambda_ratios[self.distance_slider.value()])
+        if self.transmitterRecieverModes.currentText() == "Transmitting Mode":
+            return list_of_lambda_ratios[self.distance_slider.value()]
+        else:
+            return list_of_lambda_ratios[self.reciver_distance_slider.value()]
     
     def get_frquency_slider_position(self):
         list_of_frequencies = [i for i in range(1,21)]
@@ -158,7 +180,18 @@ class MainWindow(QMainWindow):
             self.controller.set_current_mode('Transmitting Mode')
         if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
             self.modesStack.setCurrentIndex(0)
-            self.controller.set_current_mode('Recieving Mode')
+            
+            
+        if self.transmitterRecieverModes.currentText == 'Transmitting Mode':
+            self.phased_array.transmitters_list.clear()
+            self.phased_array.transmitters_list.append(Transmitter())
+            self.number_of_transmetters_label.setText('1')
+        else:
+            self.phased_array.transmitters_list.clear()
+            self.phased_array.transmitters_list.append(Reciver())
+            self.number_of__recievers_label.setText('1')
+            
+        self.controller.set_current_beam()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
