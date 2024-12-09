@@ -84,7 +84,7 @@ class MainWindow(QMainWindow):
         self.controller.profile_viewer = self.profile_viewer
         self.beam_Viewer.current_phased_array = self.phased_array
         self.profile_viewer.current_phased_array = self.phased_array
-        
+        self.number_of_transmetters_label.setText('1')
         
         
     def change_frequency(self):
@@ -108,7 +108,6 @@ class MainWindow(QMainWindow):
 
     def set_distance_between_transmitters(self):
         distance_between_transmitters = self.get_distance_slider_position()
-        
         circle_radius = self.radius_slider.sliderPosition()
         if(self.controller.phased_array.geometry == "Linear"):
             self.controller.calculate_linear_distance(distance_between_transmitters)
@@ -127,7 +126,7 @@ class MainWindow(QMainWindow):
     def add_transmitter(self):
         circle_radius = self.radius_slider.sliderPosition()
         distance_between_transmitters = self.get_distance_slider_position()
-        self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
+        # self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
         self.controller.add_transmitter(distance_between_transmitters , circle_radius)
             
     def remove_transmitter(self):
@@ -135,6 +134,7 @@ class MainWindow(QMainWindow):
         distance_between_transmitters = self.get_distance_slider_position()
         self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) - 1)}')
         self.controller.remove_transmitter(distance_between_transmitters ,circle_radius)
+        
         
     def get_distance_slider_position(self):
         list_of_lambda_ratios = [i/2 for i in range(0,21)]
