@@ -71,8 +71,14 @@ class MainWindow(QMainWindow):
         self.add_transmitter_button = self.findChild(QPushButton , "plusButton")
         self.add_transmitter_button.clicked.connect(self.add_transmitter)
         
+        self.add_reciever_button = self.findChild(QPushButton , "plusRecievingButton")
+        self.add_reciever_button.clicked.connect(self.add_reciever)
+        
         self.remove_transmitter_button = self.findChild(QPushButton , "minusButton")
         self.remove_transmitter_button.clicked.connect(self.remove_transmitter)
+        
+        self.remove_reciever_button = self.findChild(QPushButton , "minusRecievingButton")
+        self.remove_reciever_button.clicked.connect(self.remove_reciever)
         
         self.mode_combobox = self.findChild(QComboBox , "comboBox")
         self.mode_combobox.currentIndexChanged.connect(self.set_mode)
@@ -150,10 +156,10 @@ class MainWindow(QMainWindow):
         self.controller.add_transmitter(distance_between_transmitters , circle_radius)
         
     def add_reciever(self):
-        circle_radius = self.radius_slider.sliderPosition()
+        # circle_radius = self.radius_slider.sliderPosition()
         distance_between_transmitters = self.get_distance_slider_position()
         self.number_of__recievers_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
-        self.controller.add_transmitter(distance_between_transmitters , circle_radius)
+        self.controller.add_transmitter(distance_between_transmitters , 0)
             
     def remove_transmitter(self):
         circle_radius = self.radius_slider.sliderPosition()
@@ -161,6 +167,11 @@ class MainWindow(QMainWindow):
         self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) - 1)}')
         self.controller.remove_transmitter(distance_between_transmitters ,circle_radius)
         
+    def remove_reciever(self):
+        # circle_radius = self.radius_slider.sliderPosition()
+        distance_between_transmitters = self.get_distance_slider_position()
+        self.number_of_transmetters_label.setText(f'{str(int(self.number_of__recievers_label.text()) - 1)}')
+        self.controller.remove_transmitter(distance_between_transmitters ,0)
         
     def get_distance_slider_position(self):
         list_of_lambda_ratios = [i/2 for i in range(0,21)]
@@ -181,7 +192,7 @@ class MainWindow(QMainWindow):
             self.modesStack.setCurrentIndex(0)
             
             
-        if self.transmitterRecieverModes.currentText == 'Transmitting Mode':
+        if self.transmitterRecieverModes.currentText() == 'Transmitting Mode':
             self.phased_array.transmitters_list.clear()
             self.phased_array.transmitters_list.append(Transmitter())
             self.number_of_transmetters_label.setText('1')
