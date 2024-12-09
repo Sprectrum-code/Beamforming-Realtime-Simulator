@@ -48,12 +48,14 @@ class MainWindow(QMainWindow):
         
         
         self.frequency_slider = self.findChild(QSlider, "frequencySlider")
-        self.frequency_slider.setMinimum(1)
-        self.frequency_slider.setMaximum(50)
+        self.frequency_slider.setMinimum(0)
+        self.frequency_slider.setMaximum(20)
         self.frequency_slider.valueChanged.connect(self.change_frequency)
         
         self.distance_slider = self.findChild(QSlider, "distanceSlider")
-        self.distance_slider.sliderMoved.connect(self.set_distance_between_transmitters)
+        self.distance_slider.setMinimum(0)
+        self.distance_slider.setMaximum(20)
+        self.distance_slider.valueChanged.connect(self.set_distance_between_transmitters)
         self.number_of_transmetters_label = self.findChild(QLabel, "label_9")
         
         self.add_transmitter_button = self.findChild(QPushButton , "plusButton")
@@ -86,7 +88,7 @@ class MainWindow(QMainWindow):
         
         
     def change_frequency(self):
-        new_frequency = self.frequency_slider.value()
+        new_frequency = self.get_frquency_slider_position()
         self.phased_array.current_frequency = deepcopy(new_frequency)
         self.controller.set_current_beam()
         
@@ -105,7 +107,8 @@ class MainWindow(QMainWindow):
         self.controller.set_current_beam()
 
     def set_distance_between_transmitters(self):
-        distance_between_transmitters = self.distance_slider.sliderPosition()
+        distance_between_transmitters = self.get_distance_slider_position()
+        
         circle_radius = self.radius_slider.sliderPosition()
         if(self.controller.phased_array.geometry == "Linear"):
             self.controller.calculate_linear_distance(distance_between_transmitters)
@@ -114,7 +117,7 @@ class MainWindow(QMainWindow):
     
     def set_radius(self):
         circle_radius = self.radius_slider.sliderPosition()
-        distance_between_transmitters = self.distance_slider.sliderPosition()
+        distance_between_transmitters = self.get_distance_slider_position()
         if(self.controller.phased_array.geometry == "Linear"):
             pass
         elif (self.controller.phased_array.geometry == "Curvlinear"):
@@ -123,15 +126,24 @@ class MainWindow(QMainWindow):
 
     def add_transmitter(self):
         circle_radius = self.radius_slider.sliderPosition()
-        distance_between_transmitters = self.distance_slider.sliderPosition()
+        distance_between_transmitters = self.get_distance_slider_position()
         self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
         self.controller.add_transmitter(distance_between_transmitters , circle_radius)
             
     def remove_transmitter(self):
         circle_radius = self.radius_slider.sliderPosition()
-        distance_between_transmitters = self.distance_slider.sliderPosition()
+        distance_between_transmitters = self.get_distance_slider_position()
         self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) - 1)}')
         self.controller.remove_transmitter(distance_between_transmitters ,circle_radius)
+        
+    def get_distance_slider_position(self):
+        list_of_lambda_ratios = [i/2 for i in range(0,21)]
+        print(list_of_lambda_ratios[self.distance_slider.value()])
+        return list_of_lambda_ratios[self.distance_slider.value()]
+    
+    def get_frquency_slider_position(self):
+        list_of_frequencies = [i for i in range(1,21)]
+        return list_of_frequencies[self.frequency_slider.value()]
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
