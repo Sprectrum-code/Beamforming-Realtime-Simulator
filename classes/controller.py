@@ -7,6 +7,7 @@ class Controller():
         
         
     def set_current_beam(self):
+        self.profile_viewer.current_mode = self.mode_box.currentText()
         self.beam_viewer.current_mode = self.mode_box.currentText()
         self.beam_viewer.update_map()
         # self.profile_viewer.update_plot(None)
@@ -27,6 +28,4 @@ class Controller():
     def calcualte_angles(self ,distance_between_transmitters ,circle_radius ):
         self.phased_array.calcualte_angles(distance_between_transmitters , circle_radius)
         self.set_current_beam()
-        
-    def set_current_mode(self, new_mode):
-        self.profile_viewer.current_mode = new_mode    
+    
