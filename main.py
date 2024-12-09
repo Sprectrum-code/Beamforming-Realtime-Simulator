@@ -80,15 +80,20 @@ class MainWindow(QMainWindow):
         
         self.mode_combobox = self.findChild(QComboBox , "comboBox")
         self.mode_combobox.currentIndexChanged.connect(self.set_mode)
+        # self.mode_combobox.currentText()
         
         self.radius_slider = self.findChild(QSlider , "radiusSlider")
         self.radius_slider.setRange(1,10)
         self.radius_slider.sliderMoved.connect(self.set_radius)
         
+        
+        
+        
         self.controller = Controller(self.phased_array,self.beam_Viewer,self.profile_viewer)
         self.controller.phased_array = self.phased_array
         self.controller.beam_viewer = self.beam_Viewer
         self.controller.profile_viewer = self.profile_viewer
+        self.controller.mode_box = self.transmitterRecieverModes
         self.beam_Viewer.current_phased_array = self.phased_array
         self.profile_viewer.current_phased_array = self.phased_array
         self.number_of_transmetters_label.setText('1')
@@ -157,6 +162,7 @@ class MainWindow(QMainWindow):
             self.modesStack.setCurrentIndex(1)
         if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
             self.modesStack.setCurrentIndex(0)
+        self.controller.set_current_beam()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

@@ -3,9 +3,11 @@ class Controller():
         self.phased_array = phased_array
         self.beam_viewer = beam_viewer
         self.profile_viewer = profile_viewer
+        self.mode_box = []
         
         
     def set_current_beam(self):
+        self.beam_viewer.current_mode = self.mode_box.currentText()
         self.beam_viewer.update_map()
         self.profile_viewer.update_plot()
         

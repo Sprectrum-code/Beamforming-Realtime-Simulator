@@ -13,6 +13,7 @@ class PhasedArray():
         self.x_grid_size = 1000
         self.y_grid_size = 1000
         self.wave_map = np.zeros((1000, 1000))
+        self.type_of_array = "transmitters"
         
     def add_transmitter(self , distance_between_transmitters ,radius):
         self.transmitters_list.append(Transmitter())
