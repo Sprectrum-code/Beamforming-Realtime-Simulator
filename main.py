@@ -158,7 +158,7 @@ class MainWindow(QMainWindow):
     def add_reciever(self):
         # circle_radius = self.radius_slider.sliderPosition()
         distance_between_transmitters = self.get_distance_slider_position()
-        self.number_of__recievers_label.setText(f'{str(int(self.number_of_transmetters_label.text()) + 1)}')
+        self.number_of__recievers_label.setText(f'{str(int(self.number_of__recievers_label.text()) + 1)}')
         self.controller.add_transmitter(distance_between_transmitters , 0)
             
     def remove_transmitter(self):

@@ -8,6 +8,7 @@ class Controller():
         
     def set_current_beam(self):
         self.beam_viewer.current_mode = self.mode_box.currentText()
+        self.profile_viewer.current_mode = self.mode_box.currentText()
         self.beam_viewer.update_map()
         # self.profile_viewer.update_plot(None)
         
