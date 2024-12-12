@@ -381,7 +381,7 @@ QComboBox QAbstractItemView {
               <string notr="true">border: none</string>
              </property>
              <property name="currentIndex">
-              <number>1</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="recievingModePage">
               <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -571,7 +571,7 @@ font-size: 18px
 </string>
                          </property>
                          <property name="text">
-                          <string>5</string>
+                          <string>0</string>
                          </property>
                         </widget>
                        </item>
@@ -852,7 +852,7 @@ font-size: 18px
 </string>
                        </property>
                        <property name="text">
-                        <string>1.5</string>
+                        <string>0</string>
                        </property>
                       </widget>
                      </item>
@@ -947,7 +947,7 @@ font-size: 18px
 </string>
                        </property>
                        <property name="text">
-                        <string>20</string>
+                        <string>1</string>
                        </property>
                       </widget>
                      </item>
@@ -1042,7 +1042,7 @@ font-size: 18px
 </string>
                        </property>
                        <property name="text">
-                        <string>4</string>
+                        <string>0</string>
                        </property>
                       </widget>
                      </item>
@@ -1346,7 +1346,7 @@ QComboBox QAbstractItemView {
 </string>
                    </property>
                    <property name="text">
-                    <string>3</string>
+                    <string>1</string>
                    </property>
                   </widget>
                  </item>

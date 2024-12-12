@@ -100,6 +100,13 @@ class MainWindow(QMainWindow):
         self.reciver_distance_slider.setMaximum(20)
         self.reciver_distance_slider.valueChanged.connect(self.set_distance_between_transmitters)
         
+        # self.phase_shift_label = self.findChild(QLabel, "shiftRecievingLabel")
+        self.distance_recievers_label = self.findChild(QLabel, "label_20")
+        self.phase_shift_label = self.findChild(QLabel, "shiftLabel")
+        self.distance_transmitters_label = self.findChild(QLabel, "distanceLabel")
+        self.frequency_label = self.findChild(QLabel, "frequencyLabel")
+        self.radius_label = self.findChild(QLabel, "radiusLabel")
+        
         
         
         
@@ -111,17 +118,19 @@ class MainWindow(QMainWindow):
         self.beam_Viewer.current_phased_array = self.phased_array
         self.profile_viewer.current_phased_array = self.phased_array
         self.number_of_transmetters_label.setText('1')
-        
+        self.controller.set_current_beam()
         
     def change_frequency(self):
         new_frequency = self.get_frquency_slider_position()
         self.phased_array.current_frequency = deepcopy(new_frequency)
         self.controller.set_current_beam()
+        self.frequency_label.setText(str(new_frequency))
         
     def change_phase(self):
         new_phase = self.phase_shift_values[self.phase_shift_slider.value()]
         self.phased_array.phase_shift = deepcopy(new_phase)
         self.controller.set_current_beam()
+        self.phase_shift_label.setText(str(new_phase))
     
     def set_mode(self , new_mode_index):
         if(new_mode_index == 0):
@@ -139,6 +148,7 @@ class MainWindow(QMainWindow):
             self.controller.calculate_linear_distance(distance_between_transmitters)
         elif (self.controller.phased_array.geometry == "Curvlinear"):
             self.controller.calcualte_angles(distance_between_transmitters ,circle_radius )
+        self.distance_transmitters_label.setText(str(distance_between_transmitters))
     
     def set_radius(self):
         circle_radius = self.radius_slider.sliderPosition()
@@ -148,6 +158,7 @@ class MainWindow(QMainWindow):
         elif (self.controller.phased_array.geometry == "Curvlinear"):
             self.controller.phased_array.calcualte_angles(distance_between_transmitters , circle_radius)
         self.controller.set_current_beam()
+        self.radius_label.setText(str(circle_radius))
 
     def add_transmitter(self):
         circle_radius = self.radius_slider.sliderPosition()
@@ -170,7 +181,7 @@ class MainWindow(QMainWindow):
     def remove_reciever(self):
         # circle_radius = self.radius_slider.sliderPosition()
         distance_between_transmitters = self.get_distance_slider_position()
-        self.number_of_transmetters_label.setText(f'{str(int(self.number_of__recievers_label.text()) - 1)}')
+        self.number_of__recievers_label.setText(f'{str(int(self.number_of__recievers_label.text()) - 1)}')
         self.controller.remove_transmitter(distance_between_transmitters ,0)
         
     def get_distance_slider_position(self):
@@ -192,16 +203,14 @@ class MainWindow(QMainWindow):
         if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
             self.modesStack.setCurrentIndex(0)
             
+        self.controller.phased_array.transmitters_list.clear()
             
         if self.transmitterRecieverModes.currentText() == 'Transmitting Mode':
-            self.phased_array.transmitters_list.clear()
             self.phased_array.transmitters_list.append(Transmitter())
             self.number_of_transmetters_label.setText('1')
         else:
-            self.phased_array.transmitters_list.clear()
             self.phased_array.transmitters_list.append(Reciver())
             self.number_of__recievers_label.setText('1')
-            
         self.controller.set_current_beam()
 
 if __name__ == '__main__':
