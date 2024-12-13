@@ -39,6 +39,13 @@ class ProfileViewer(QFrame):
 
     def init_plot(self):
         self.line, = self.ax.plot([], [], color="b", linewidth=2, label="Beam Profile")
+        self.ax.set_theta_zero_location("N")  # Set 0 degrees at the top
+        self.figure.patch.set_facecolor("#1E293B")
+        self.ax.patch.set_facecolor("#1E293B")
+        self.ax.grid(color = "gray")
+        self.ax.tick_params(axis='both', colors='blue')  # Set tick label color
+        # self.ax.set_rticks([0.5, 1, 1.5], color='purple') 
+        # self.ax.set_theta_direction(-1)
         return self.line,
 
     def calculate_phase_shift(self, antenna, angle):
@@ -52,34 +59,73 @@ class ProfileViewer(QFrame):
 
     def update_plot(self, frame):
         if (self.current_mode == "Recieving Mode"):
-            self.frequency = 2
-            self.wavelength = 1 / self.frequency
-            self.phase_shift = 2 * np.pi * self.distance_between_recievers / self.wavelength
-            self.k = 2 * np.pi / self.wavelength
-            amplitude = np.zeros_like(self.theta, dtype=np.complex128)
-            for antenna in self.current_phased_array.transmitters_list:
-                phase_shift = self.calculate_phase_shift(antenna, self.theta)
-                amplitude += np.exp(1j * (2 * np.pi * self.frequency * frame - phase_shift))
+            beam_profile = self.calculate_recivers_beam_profile()
+            
+            # self.frequency = 2
+            # self.wavelength = 1 / self.frequency
+            # self.phase_shift = 2 * np.pi * self.distance_between_recievers / self.wavelength
+            # self.k = 2 * np.pi / self.wavelength
+            # amplitude = np.zeros_like(self.theta, dtype=np.complex128)
+            # for antenna in self.current_phased_array.transmitters_list:
+            #     phase_shift = self.calculate_phase_shift(antenna, self.theta)
+            #     amplitude += np.exp(1j * (2 * np.pi * self.frequency * frame - phase_shift))
 
-            intensity = np.abs(amplitude) ** 2  
-            normalized_intensity = intensity / np.max(intensity) 
-            self.line.set_data(self.theta, normalized_intensity)
+            # intensity = np.abs(amplitude) ** 2  
+            # normalized_intensity = intensity / np.max(intensity) 
+            self.line.set_data(np.linspace(0, 2 * np.pi, 1000), beam_profile)
             return self.line,
         else:
-            self.frequency = self.current_phased_array.current_frequency
-            self.wavelength = 1/self.frequency
-            self.phase_shift = 2 * np.pi* self.current_phased_array.phase_shift
-            self.k = 2* np.pi/self.wavelength
-            amplitude = np.zeros_like(self.theta, dtype=np.complex128)
-            for antenna in self.current_phased_array.transmitters_list:
-                phase_shift = self.calculate_phase_shift(antenna, self.theta)
-                amplitude += np.exp(1j * (2 * np.pi * self.frequency * frame - phase_shift))
-            intensity = np.abs(amplitude) ** 2  
-            normalized_intensity = intensity / np.max(intensity) 
-            self.line.set_data(self.theta, normalized_intensity)
+            # self.frequency = self.current_phased_array.current_frequency
+            # self.wavelength = 1/self.frequency
+            # self.phase_shift = 2 * np.pi* self.current_phased_array.phase_shift
+            # self.k = 2* np.pi/self.wavelength
+            # amplitude = np.zeros_like(self.theta, dtype=np.complex128)
+            # for antenna in self.current_phased_array.transmitters_list:
+            #     phase_shift = self.calculate_phase_shift(antenna, self.theta)
+            #     amplitude += np.exp(1j * (2 * np.pi * self.frequency * frame - phase_shift))
+            # intensity = np.abs(amplitude) ** 2  
+            # normalized_intensity = intensity / np.max(intensity) 
+            beam_profile = self.calculate_transmitters_beam_profile()
+            angles = np.linspace(0, 2 * np.pi, 1000)
+            self.line.set_data(self.theta, beam_profile)
+
             return self.line,
             
             
+    def calculate_recivers_beam_profile(self):
+        response = []
+        angles = np.linspace(0, 2 * np.pi, 1000)  # Angles from 0 to 360 degrees
+        if len(self.current_phased_array.transmitters_list) > 1:
+            self.distance_between_recievers = abs(self.current_phased_array.transmitters_list[0].x_posision - self.current_phased_array.transmitters_list[1].x_posision)
+        else:
+            self.distance_between_recievers = 0
+        # self.distance_between_recievers = abs(self.current_phased_array.transmitters_list[-1].x_posision - self.current_phased_array.transmitters_list[len(self.current_phased_array.transmitters_list) - 1].x_posision) 
+        for theta in angles:
+            phase_shifts = (2 * np.pi / (1/self.frequency)) * np.arange(len(self.current_phased_array.transmitters_list)) * self.distance_between_recievers * np.sin(theta)
+            array_response = np.sum(np.exp(1j * phase_shifts))  # Complex sum
+            response.append(abs(array_response))
+        response = np.array(response)
+        return response / np.max(response)
+        
+    def calculate_transmitters_beam_profile(self):
+        response = []
+        angles = np.linspace(0,2*np.pi,1000)
+        k = 2 * np.pi /( 1/self.current_phased_array.current_frequency)
+        
+        if len(self.current_phased_array.transmitters_list) > 1:
+            self.distance_between_recievers = abs(self.current_phased_array.transmitters_list[0].x_posision - self.current_phased_array.transmitters_list[1].x_posision)
+        else:
+            self.distance_between_recievers = 0
+            
+        for theta in angles:
+            phase_shifts = k * np.arange(len(self.current_phased_array.transmitters_list)) * \
+                       self.distance_between_recievers * np.sin(theta) - \
+                       np.arange(len(self.current_phased_array.transmitters_list)) * self.current_phased_array.phase_shift
+            # print(self.current_phased_array.phase_shift)
+            array_response = np.sum(np.exp(1j * phase_shifts))
+            response.append(abs(array_response))
+        response = np.array(response)
+        return response / np.max(response)
         
         elif(self.current_mode == "Transmitting Mode"):
             self.frequency = 2

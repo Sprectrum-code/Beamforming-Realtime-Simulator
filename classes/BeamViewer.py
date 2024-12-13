@@ -39,11 +39,29 @@ class BeamViewer(pg.ImageView):
             temp_transmitter.y_posision = 50
             distance = np.sqrt((x_mesh - temp_transmitter.x_posision)**2 + (y_mesh - temp_transmitter.y_posision)**2)
             amplitude += np.sin(2 *2*np.pi + 2*np.pi*2*distance)
+            for reciever in self.current_phased_array.transmitters_list:
+                scaled_x = (reciever.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2
+                scaled_y = reciever.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range
+                self.add_red_dot(scaled_x, scaled_y)
             
+        colormap = pg.ColorMap([0, 0.5, 1], [(255, 0, 0), (0, 0, 255), (255, 0, 0)])
             
             
         self.current_phased_array.wave_map = amplitude
-        self.setImage(amplitude.T)
+        image  = pg.ImageItem(amplitude.T)
+        image.setLookupTable(colormap.getLookupTable())
+        
+        self.getView().addItem(image)
+        colorbar = pg.ColorBarItem(
+            values=(0, 1),  # Range of the color scale
+            colorMap=colormap,  # The colormap to use
+            width=20  # Width of the color bar
+        )
+
+        # Add the color bar to the layout
+        colorbar.setMinimumHeight(1000)
+        self.getView().addItem(colorbar)
+        # self.image.setLookupTable(colormap.getLookupTable())
         self.getView().autoRange()
             
     def add_red_dot(self , x,y):
