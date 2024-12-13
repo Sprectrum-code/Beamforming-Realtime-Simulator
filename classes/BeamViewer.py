@@ -50,15 +50,17 @@ class BeamViewer(pg.ImageView):
         self.current_phased_array.wave_map = amplitude
         image  = pg.ImageItem(amplitude.T)
         image.setLookupTable(colormap.getLookupTable())
-        
+
         self.getView().addItem(image)
+
         colorbar = pg.ColorBarItem(
-            values=(0, 1),  # Range of the color scale
+            values=(-1, 1),  # Range of the color scale
             colorMap=colormap,  # The colormap to use
             width=20  # Width of the color bar
         )
-
+        
         # Add the color bar to the layout
+        colorbar.axis.setScale(-1)
         colorbar.setMinimumHeight(1000)
         self.getView().addItem(colorbar)
         # self.image.setLookupTable(colormap.getLookupTable())
@@ -67,10 +69,11 @@ class BeamViewer(pg.ImageView):
     def add_red_dot(self , x,y):
         scatter = pg.ScatterPlotItem(
             pos=np.array([[x, y]]),  
-            size=10,               
-            brush=pg.mkBrush('r'), 
+            size=15,               
+            brush=pg.mkBrush('g'), 
             pen=None               
         )
+        scatter.setZValue(100)
         self.getView().addItem(scatter)
         self.transmitter_positions.append(scatter)
         
