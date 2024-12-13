@@ -23,8 +23,7 @@ class Controller():
     def calculate_linear_distance(self , distance_between_transmitters):
         self.phased_array.calcualte_linear_distance(distance_between_transmitters)
         self.set_current_beam()
-        
-        
+             
     def calcualte_angles(self ,distance_between_transmitters ,circle_radius ):
         self.phased_array.calcualte_angles(distance_between_transmitters , circle_radius)
         self.set_current_beam()

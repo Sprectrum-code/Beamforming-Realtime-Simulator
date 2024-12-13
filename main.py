@@ -10,11 +10,18 @@ from classes.phasedArray import PhasedArray
 from classes.controller import Controller
 from classes.profileViewer import ProfileViewer
 from copy import deepcopy
+import logging
 import numpy as np
 from classes.transmetter import Transmitter
 from classes.reciver import Reciver
 compile_qrc()
 
+logging.basicConfig(
+    filename='app.log',
+    filemode='a',  # Append mode
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.DEBUG
+)
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -22,6 +29,8 @@ class MainWindow(QMainWindow):
         loadUi('main.ui', self)
         self.setWindowTitle('Beam Forming')
         self.setWindowIcon(QIcon('icons_setup\icons\logo.png'))
+        self.logger = logging.getLogger(self.__class__.__name__)
+
 
         logoPixmap = QPixmap('icons_setup\icons\logo2.png')
 
@@ -125,18 +134,23 @@ class MainWindow(QMainWindow):
         self.phased_array.current_frequency = deepcopy(new_frequency)
         self.controller.set_current_beam()
         self.frequency_label.setText(str(new_frequency))
+        self.logger.info(f'frequency changed to {new_frequency} successfully')
         
     def change_phase(self):
         new_phase = self.phase_shift_values[self.phase_shift_slider.value()]
         self.phased_array.phase_shift = deepcopy(new_phase)
         self.controller.set_current_beam()
         self.phase_shift_label.setText(str(new_phase))
+        self.logger.info(f'phase changed to {new_phase} successfully')
+
     
     def set_mode(self , new_mode_index):
         if(new_mode_index == 0):
             self.controller.phased_array.geometry = "Linear"
         elif(new_mode_index == 1):
             self.controller.phased_array.geometry = "Curvlinear"
+        self.logger.info(f'phase geometry changed to {self.controller.phased_array.geometry} successfully')
+
         self.add_transmitter()
         self.remove_transmitter()
         self.controller.set_current_beam()
@@ -148,6 +162,7 @@ class MainWindow(QMainWindow):
             self.controller.calculate_linear_distance(distance_between_transmitters)
         elif (self.controller.phased_array.geometry == "Curvlinear"):
             self.controller.calcualte_angles(distance_between_transmitters ,circle_radius )
+        self.logger.info(f'Distance between transmitters changed to {distance_between_transmitters} successfully')
         self.distance_transmitters_label.setText(str(distance_between_transmitters))
     
     def set_radius(self):
