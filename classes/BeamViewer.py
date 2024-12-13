@@ -29,10 +29,10 @@ class BeamViewer(pg.ImageView):
             for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
                 distance = np.sqrt((x_mesh - transmitter.x_posision)**2 + (y_mesh - transmitter.y_posision)**2)
                 amplitude += np.sin(self.current_phased_array.current_frequency *2*np.pi + i*self.current_phased_array.phase_shift + 2*np.pi*self.current_phased_array.current_frequency*distance)
-                if(self.current_phased_array.geometry == "Linear"):
-                    scaled_x = (transmitter.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2
-                    scaled_y = transmitter.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range
-                    self.add_red_dot(scaled_x, scaled_y)
+                # if(self.current_phased_array.geometry == "Linear"):
+                scaled_x = (transmitter.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2
+                scaled_y = transmitter.y_posision * (self.current_phased_array.y_grid_size)/self.current_phased_array.current_y_range
+                self.add_red_dot(scaled_x, scaled_y)
         else:# this can be not static 
             temp_transmitter = Transmitter()
             temp_transmitter.x_posision = 50
@@ -41,7 +41,7 @@ class BeamViewer(pg.ImageView):
             amplitude += np.sin(2 *2*np.pi + 2*np.pi*2*distance)
             for reciever in self.current_phased_array.transmitters_list:
                 scaled_x = (reciever.x_posision * (self.current_phased_array.x_grid_size/2)/self.current_phased_array.current_x_range) + self.current_phased_array.x_grid_size/2
-                scaled_y = reciever.y_posision * (self.current_phased_array.y_grid_size/2)/self.current_phased_array.current_y_range
+                scaled_y = reciever.y_posision * (self.current_phased_array.y_grid_size)/self.current_phased_array.current_y_range
                 self.add_red_dot(scaled_x, scaled_y)
             
         colormap = pg.ColorMap([0, 0.5, 1], [(255, 0, 0), (0, 0, 255), (255, 0, 0)])

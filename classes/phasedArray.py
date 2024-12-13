@@ -6,6 +6,7 @@ class PhasedArray():
         self.current_frequency = 1
         self.transmitters_list = [Transmitter()]
         self.phase_shift = 0
+        self.reciver_phase_shift = 0
         self.geometry = "Linear"
         self.distance = 1
         self.radius = 1
@@ -25,10 +26,10 @@ class PhasedArray():
                 self.calcualte_angles(distance_between_transmitters , radius)
         else:
             self.transmitters_list.append(Reciver())
-            if(self.geometry == "Linear"):
-                self.calcualte_linear_distance(distance_between_transmitters)
-            if(self.geometry == "Curvlinear"):
-                self.calcualte_angles(distance_between_transmitters , radius)
+            # if(self.geometry == "Linear"):
+            self.calcualte_linear_distance(distance_between_transmitters)
+            # if(self.geometry == "Curvlinear"):
+            #     self.calcualte_angles(distance_between_transmitters , radius)
             
     def remove_transmitter(self , distance_between_transmitters , radius):
         self.transmitters_list.pop()

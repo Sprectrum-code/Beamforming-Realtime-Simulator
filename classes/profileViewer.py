@@ -85,9 +85,13 @@ class ProfileViewer(QFrame):
             #     amplitude += np.exp(1j * (2 * np.pi * self.frequency * frame - phase_shift))
             # intensity = np.abs(amplitude) ** 2  
             # normalized_intensity = intensity / np.max(intensity) 
-            beam_profile = self.calculate_transmitters_beam_profile()
-            angles = np.linspace(0, 2 * np.pi, 1000)
-            self.line.set_data(self.theta, beam_profile)
+            if self.current_phased_array.geometry == "Linear":
+                beam_profile = self.calculate_transmitters_beam_profile()
+                # angles = np.linspace(0, 2 * np.pi, 1000)
+                self.line.set_data(self.theta, beam_profile)
+            else:
+                beam_profile = self.calculate_curvilinear_transmitters_beam_profle()
+                self.line.set_data(self.theta, beam_profile)
 
             return self.line,
             
@@ -101,20 +105,34 @@ class ProfileViewer(QFrame):
             self.distance_between_recievers = 0
         # self.distance_between_recievers = abs(self.current_phased_array.transmitters_list[-1].x_posision - self.current_phased_array.transmitters_list[len(self.current_phased_array.transmitters_list) - 1].x_posision) 
         for theta in angles:
-            phase_shifts = (2 * np.pi / (1/self.frequency)) * np.arange(len(self.current_phased_array.transmitters_list)) * self.distance_between_recievers * np.sin(theta)
+            # print(self.current_phased_array.reciver_phase_shift)
+            phase_shifts = (2 * np.pi / (1/self.frequency)) * np.arange(len(self.current_phased_array.transmitters_list)) * self.distance_between_recievers *( np.sin(theta) - np.sin(self.current_phased_array.reciver_phase_shift))
             array_response = np.sum(np.exp(1j * phase_shifts))  # Complex sum
             response.append(abs(array_response))
         response = np.array(response)
         return response / np.max(response)
     
     def calculate_curvilinear_transmitters_beam_profle(self):
+        response = []
         angles = np.linspace(0, 2*np.pi, 1000)
-        phase_shifts = np.zeros(len(self.current_phased_array.transmitters_list))
-        array_factor = np.zeros_like(angles)
-        for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
-            delta_r = transmitter.x_posision * np.cos(angles) + transmitter.y_posision * np.sin(angles)
-            array_factor += np.exp(1j * (2 * np.pi / (1/self.frequency) * delta_r + self.current_phased_array.phase_shift*i))
-        return np.abs(array_factor) / np.max(array_factor)
+        k = 2 * np.pi / (1/self.frequency)
+        for theta in angles:
+            phase_shifts = []
+            for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
+                delta_r = transmitter.x_posision * np.cos(theta) + transmitter.y_posision * np.sin(theta)
+                phase_shift = k * delta_r - self.current_phased_array.phase_shift*i
+                phase_shifts.append(phase_shift)
+            array_response = np.sum(np.exp(1j*np.array(phase_shifts)))
+            response.append(abs(array_response))
+        response = np.array(response)
+        return response / np.max(response)
+        
+        # phase_shifts = np.zeros(len(self.current_phased_array.transmitters_list))
+        # array_factor = np.zeros_like(angles)
+        # for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
+        #     delta_r = transmitter.x_posision * np.cos(angles) + transmitter.y_posision * np.sin(angles)
+        #     array_factor += np.exp(1j * (2 * np.pi / (1/self.frequency) * delta_r + self.current_phased_array.phase_shift*i))
+        # return np.abs(array_factor) / np.max(array_factor)
         
     def calculate_transmitters_beam_profile(self):
         response = []

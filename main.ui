@@ -467,7 +467,7 @@ font-size: 18px
 </string>
                          </property>
                          <property name="text">
-                          <string>1.5</string>
+                          <string>0</string>
                          </property>
                         </widget>
                        </item>

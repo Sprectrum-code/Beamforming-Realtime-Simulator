@@ -10,7 +10,9 @@ class Controller():
         self.profile_viewer.current_mode = self.mode_box.currentText()
         self.beam_viewer.current_mode = self.mode_box.currentText()
         self.profile_viewer.current_mode = self.mode_box.currentText()
+        self.phased_array.current_mode = self.mode_box.currentText()
         self.beam_viewer.update_map()
+        
         # self.profile_viewer.update_plot(None)
         
     def add_transmitter(self ,distance_between_transmitters , circle_radius):
