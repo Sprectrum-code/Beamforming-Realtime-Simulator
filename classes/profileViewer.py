@@ -136,6 +136,20 @@ class ProfileViewer(QFrame):
         response = np.array(response)
         return response / np.max(response)
         
+        # elif(self.current_mode == "Transmitting Mode"):
+        #     self.frequency = 2
+        #     self.wavelength = 1 / self.frequency
+        #     self.phase_shift = 2 * np.pi * self.distance_between_recievers / self.wavelength
+        #     self.k = 2 * np.pi / self.wavelength
+        #     amplitude = np.zeros_like(self.theta, dtype=np.complex128)
+        #     for antenna in self.current_phased_array.transmitters_list:
+        #         phase_shift = self.calculate_phase_shift(antenna, self.theta)
+        #         amplitude += np.exp(1j * (2 * np.pi * self.frequency * frame - phase_shift))
+
+        #     intensity = np.abs(amplitude) ** 2  
+        #     normalized_intensity = intensity / np.max(intensity) 
+        #     self.line.set_data(self.theta, normalized_intensity)
+        #     return self.line,
 
 
     # def update_plot(self):

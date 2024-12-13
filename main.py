@@ -152,6 +152,7 @@ class MainWindow(QMainWindow):
     
     def set_radius(self):
         circle_radius = self.radius_slider.sliderPosition()
+        self.controller.phased_array.radius = circle_radius
         distance_between_transmitters = self.get_distance_slider_position()
         if(self.controller.phased_array.geometry == "Linear"):
             pass
@@ -199,7 +200,6 @@ class MainWindow(QMainWindow):
     def change_mode(self):
         if self.transmitterRecieverModes.currentText() == 'Transmitting Mode':
             self.modesStack.setCurrentIndex(1)
-            self.controller.set_current_mode('Transmitting Mode')
         if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
             self.modesStack.setCurrentIndex(0)
             
