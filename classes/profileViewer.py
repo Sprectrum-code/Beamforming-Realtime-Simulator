@@ -106,6 +106,15 @@ class ProfileViewer(QFrame):
             response.append(abs(array_response))
         response = np.array(response)
         return response / np.max(response)
+    
+    def calculate_curvilinear_transmitters_beam_profle(self):
+        angles = np.linspace(0, 2*np.pi, 1000)
+        phase_shifts = np.zeros(len(self.current_phased_array.transmitters_list))
+        array_factor = np.zeros_like(angles)
+        for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
+            delta_r = transmitter.x_posision * np.cos(angles) + transmitter.y_posision * np.sin(angles)
+            array_factor += np.exp(1j * (2 * np.pi / (1/self.frequency) * delta_r + self.current_phased_array.phase_shift*i))
+        return np.abs(array_factor) / np.max(array_factor)
         
     def calculate_transmitters_beam_profile(self):
         response = []
