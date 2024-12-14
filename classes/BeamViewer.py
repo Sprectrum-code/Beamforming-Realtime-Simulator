@@ -3,10 +3,12 @@ import numpy as np
 from PyQt5.QtWidgets import QApplication
 from classes.phasedArray import PhasedArray
 from classes.transmetter import Transmitter
-
+import logging
 class BeamViewer(pg.ImageView):
     def __init__(self):
         super().__init__()
+        self.logger = logging.getLogger(self.__class__.__name__)
+
         self.current_phased_array = PhasedArray()
         self.transmitter_positions= []
         self.getView().setBackgroundColor("#1E293B")
@@ -25,6 +27,8 @@ class BeamViewer(pg.ImageView):
         amplitude = np.zeros_like(x_mesh)
         self.clear_red_dots()
         print(self.current_mode)
+        self.logger.info(f'updating the map with curren mode {self.current_mode}')
+        
         if self.current_mode == "Transmitting Mode":
             for i, transmitter in enumerate(self.current_phased_array.transmitters_list):
                 distance = np.sqrt((x_mesh - transmitter.x_posision)**2 + (y_mesh - transmitter.y_posision)**2)
