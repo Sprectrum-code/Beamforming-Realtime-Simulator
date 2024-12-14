@@ -589,7 +589,7 @@ font-size: 18px
 </string>
                          </property>
                          <property name="text">
-                          <string>cm</string>
+                          <string>λ</string>
                          </property>
                         </widget>
                        </item>

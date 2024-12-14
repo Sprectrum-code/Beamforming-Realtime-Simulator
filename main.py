@@ -206,7 +206,7 @@ class MainWindow(QMainWindow):
             self.controller.remove_transmitter(distance_between_transmitters ,0)
         
     def get_distance_slider_position(self):
-        list_of_lambda_ratios = [i/2 for i in range(0,21)]
+        list_of_lambda_ratios = [(i/4) for i in range(0,21)]
         # print(list_of_lambda_ratios[self.distance_slider.value()])
         if self.transmitterRecieverModes.currentText() == "Transmitting Mode":
             return list_of_lambda_ratios[self.distance_slider.value()]
