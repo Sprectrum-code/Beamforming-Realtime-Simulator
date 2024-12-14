@@ -10,18 +10,11 @@ from classes.phasedArray import PhasedArray
 from classes.controller import Controller
 from classes.profileViewer import ProfileViewer
 from copy import deepcopy
-import logging
 import numpy as np
 from classes.transmetter import Transmitter
 from classes.reciver import Reciver
 compile_qrc()
 
-logging.basicConfig(
-    filename='app.log',
-    filemode='a',  # Append mode
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.DEBUG
-)
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -29,8 +22,6 @@ class MainWindow(QMainWindow):
         loadUi('main.ui', self)
         self.setWindowTitle('Beam Forming')
         self.setWindowIcon(QIcon('icons_setup\icons\logo.png'))
-        self.logger = logging.getLogger(self.__class__.__name__)
-
 
         logoPixmap = QPixmap('icons_setup\icons\logo2.png')
 
@@ -59,10 +50,17 @@ class MainWindow(QMainWindow):
         
         self.phased_array = PhasedArray()
         self.phase_shift_slider = self.findChild(QSlider, "shiftSlider")
-        self.phase_shift_values = [(i * np.pi * 2)/30 for i in range(30+1)]
+        self.phase_shift_values = [(i * np.pi * 2)/30 for i in range(-30//2, (30+1)//2)]
         self.phase_shift_slider.setMinimum(0)
         self.phase_shift_slider.setMaximum(30)
+        self.phase_shift_slider.setValue(15)
         self.phase_shift_slider.valueChanged.connect(self.change_phase)
+        
+        self.reciver_phase_shift_slider = self.findChild(QSlider, "shiftRecievingSlider")
+        self.reciver_phase_shift_slider.setMinimum(0)
+        self.reciver_phase_shift_slider.setMaximum(30)
+        self.reciver_phase_shift_slider.setValue(15)
+        self.reciver_phase_shift_slider.valueChanged.connect(self.change_reciver_phase)
         
         
         self.frequency_slider = self.findChild(QSlider, "frequencySlider")
@@ -89,8 +87,8 @@ class MainWindow(QMainWindow):
         self.remove_reciever_button = self.findChild(QPushButton , "minusRecievingButton")
         self.remove_reciever_button.clicked.connect(self.remove_reciever)
         
-        self.mode_combobox = self.findChild(QComboBox , "comboBox")
-        self.mode_combobox.currentIndexChanged.connect(self.set_mode)
+        # self.mode_combobox = self.findChild(QComboBox , "comboBox")
+        # self.mode_combobox.currentIndexChanged.connect(self.set_mode)
         
         self.radius_slider = self.findChild(QSlider , "radiusSlider")
         self.radius_slider.setRange(1,10)
@@ -99,6 +97,9 @@ class MainWindow(QMainWindow):
         self.mode_combobox = self.findChild(QComboBox , "comboBox")
         self.mode_combobox.currentIndexChanged.connect(self.set_mode)
         # self.mode_combobox.currentText()
+
+        self.radius_frame = self.findChild(QFrame, "radiusFrame")
+        self.radius_frame.hide()
         
         self.radius_slider = self.findChild(QSlider , "radiusSlider")
         self.radius_slider.setRange(1,10)
@@ -109,7 +110,7 @@ class MainWindow(QMainWindow):
         self.reciver_distance_slider.setMaximum(20)
         self.reciver_distance_slider.valueChanged.connect(self.set_distance_between_transmitters)
         
-        # self.phase_shift_label = self.findChild(QLabel, "shiftRecievingLabel")
+        self.phase_shift_receiving_label = self.findChild(QLabel, "shiftRecievingLabel")
         self.distance_recievers_label = self.findChild(QLabel, "label_20")
         self.phase_shift_label = self.findChild(QLabel, "shiftLabel")
         self.distance_transmitters_label = self.findChild(QLabel, "distanceLabel")
@@ -134,23 +135,26 @@ class MainWindow(QMainWindow):
         self.phased_array.current_frequency = deepcopy(new_frequency)
         self.controller.set_current_beam()
         self.frequency_label.setText(str(new_frequency))
-        self.logger.info(f'frequency changed to {new_frequency} successfully')
         
     def change_phase(self):
         new_phase = self.phase_shift_values[self.phase_shift_slider.value()]
         self.phased_array.phase_shift = deepcopy(new_phase)
         self.controller.set_current_beam()
-        self.phase_shift_label.setText(str(new_phase))
-        self.logger.info(f'phase changed to {new_phase} successfully')
-
+        self.phase_shift_label.setText(str(new_phase/np.pi))
+        
+    def change_reciver_phase(self):
+        new_phase = self.phase_shift_values[self.reciver_phase_shift_slider.value()]
+        self.phased_array.reciver_phase_shift = deepcopy(new_phase)
+        self.controller.set_current_beam()
+        self.phase_shift_receiving_label.setText(str(new_phase/np.pi))
     
     def set_mode(self , new_mode_index):
         if(new_mode_index == 0):
             self.controller.phased_array.geometry = "Linear"
+            self.radius_frame.hide()
         elif(new_mode_index == 1):
             self.controller.phased_array.geometry = "Curvlinear"
-        self.logger.info(f'phase geometry changed to {self.controller.phased_array.geometry} successfully')
-
+            self.radius_frame.show()
         self.add_transmitter()
         self.remove_transmitter()
         self.controller.set_current_beam()
@@ -158,15 +162,20 @@ class MainWindow(QMainWindow):
     def set_distance_between_transmitters(self):
         distance_between_transmitters = self.get_distance_slider_position()
         circle_radius = self.radius_slider.sliderPosition()
-        if(self.controller.phased_array.geometry == "Linear"):
+        if self.transmitterRecieverModes.currentText() == "Transmitting Mode":
+            if(self.controller.phased_array.geometry == "Linear"):
+                self.controller.calculate_linear_distance(distance_between_transmitters)
+            elif (self.controller.phased_array.geometry == "Curvlinear"):
+                self.controller.calcualte_angles(distance_between_transmitters ,circle_radius )
+            self.distance_transmitters_label.setText(str(distance_between_transmitters))
+        else:
             self.controller.calculate_linear_distance(distance_between_transmitters)
-        elif (self.controller.phased_array.geometry == "Curvlinear"):
-            self.controller.calcualte_angles(distance_between_transmitters ,circle_radius )
-        self.logger.info(f'Distance between transmitters changed to {distance_between_transmitters} successfully')
-        self.distance_transmitters_label.setText(str(distance_between_transmitters))
+            self.distance_recievers_label.setText(str(distance_between_transmitters))
+            
     
     def set_radius(self):
         circle_radius = self.radius_slider.sliderPosition()
+        self.controller.phased_array.radius = circle_radius
         distance_between_transmitters = self.get_distance_slider_position()
         if(self.controller.phased_array.geometry == "Linear"):
             pass
@@ -188,19 +197,21 @@ class MainWindow(QMainWindow):
         self.controller.add_transmitter(distance_between_transmitters , 0)
             
     def remove_transmitter(self):
-        circle_radius = self.radius_slider.sliderPosition()
-        distance_between_transmitters = self.get_distance_slider_position()
-        self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) - 1)}')
-        self.controller.remove_transmitter(distance_between_transmitters ,circle_radius)
+        if int(self.number_of_transmetters_label.text()) > 0:
+            circle_radius = self.radius_slider.sliderPosition()
+            distance_between_transmitters = self.get_distance_slider_position()
+            self.number_of_transmetters_label.setText(f'{str(int(self.number_of_transmetters_label.text()) - 1)}')
+            self.controller.remove_transmitter(distance_between_transmitters ,circle_radius)
         
     def remove_reciever(self):
         # circle_radius = self.radius_slider.sliderPosition()
-        distance_between_transmitters = self.get_distance_slider_position()
-        self.number_of__recievers_label.setText(f'{str(int(self.number_of__recievers_label.text()) - 1)}')
-        self.controller.remove_transmitter(distance_between_transmitters ,0)
+        if int(self.number_of__recievers_label.text()) > 0:
+            distance_between_transmitters = self.get_distance_slider_position()
+            self.number_of__recievers_label.setText(f'{str(int(self.number_of__recievers_label.text()) - 1)}')
+            self.controller.remove_transmitter(distance_between_transmitters ,0)
         
     def get_distance_slider_position(self):
-        list_of_lambda_ratios = [i/2 for i in range(0,21)]
+        list_of_lambda_ratios = [(i/4) for i in range(0,21)]
         # print(list_of_lambda_ratios[self.distance_slider.value()])
         if self.transmitterRecieverModes.currentText() == "Transmitting Mode":
             return list_of_lambda_ratios[self.distance_slider.value()]
@@ -214,7 +225,6 @@ class MainWindow(QMainWindow):
     def change_mode(self):
         if self.transmitterRecieverModes.currentText() == 'Transmitting Mode':
             self.modesStack.setCurrentIndex(1)
-            self.controller.set_current_mode('Transmitting Mode')
         if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
             self.modesStack.setCurrentIndex(0)
             

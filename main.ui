@@ -127,12 +127,12 @@ QSlider::add-page:horizontal {
      <number>20</number>
     </property>
     <property name="horizontalSpacing">
-     <number>20</number>
+     <number>40</number>
     </property>
     <item row="0" column="1">
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <property name="spacing">
-       <number>20</number>
+       <number>40</number>
       </property>
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_12">
@@ -166,6 +166,12 @@ font-size: 18px
         </item>
         <item>
          <widget class="QFrame" name="constructiveMapFrame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="minimumSize">
            <size>
             <width>400</width>
@@ -189,56 +195,60 @@ border-radius: 10px
        </layout>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout_13">
-        <property name="spacing">
-         <number>15</number>
-        </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
         <item>
-         <widget class="QLabel" name="label_14">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>30</height>
-           </size>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <property name="spacing">
+           <number>15</number>
           </property>
-          <property name="styleSheet">
-           <string notr="true">border: none;
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
 font-size: 18px
 
 </string>
-          </property>
-          <property name="text">
-           <string>Beam Profile Viewer</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QFrame" name="profileViewerFrame">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>300</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>400</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QFrame{
+            </property>
+            <property name="text">
+             <string>Beam Profile Viewer</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="profileViewerFrame">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>300</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QFrame{
 background-color: #1E293B;
 border-radius: 10px
 }</string>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
-          </property>
-         </widget>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </item>
@@ -381,7 +391,7 @@ QComboBox QAbstractItemView {
               <string notr="true">border: none</string>
              </property>
              <property name="currentIndex">
-              <number>0</number>
+              <number>1</number>
              </property>
              <widget class="QWidget" name="recievingModePage">
               <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -389,6 +399,12 @@ QComboBox QAbstractItemView {
                 <layout class="QVBoxLayout" name="verticalLayout_15">
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_19">
+                   <property name="leftMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>10</number>
+                   </property>
                    <item>
                     <spacer name="verticalSpacer_3">
                      <property name="orientation">
@@ -467,7 +483,7 @@ font-size: 18px
 </string>
                          </property>
                          <property name="text">
-                          <string>1.5</string>
+                          <string>0</string>
                          </property>
                         </widget>
                        </item>
@@ -589,7 +605,7 @@ font-size: 18px
 </string>
                          </property>
                          <property name="text">
-                          <string>cm</string>
+                          <string>λ</string>
                          </property>
                         </widget>
                        </item>
@@ -774,10 +790,10 @@ font-size: 24px
                <item>
                 <layout class="QVBoxLayout" name="verticalLayout_4">
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>10</number>
                  </property>
                  <property name="rightMargin">
-                  <number>0</number>
+                  <number>10</number>
                  </property>
                  <item>
                   <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -839,9 +855,15 @@ font-size: 18px
                      </item>
                      <item>
                       <widget class="QLabel" name="shiftLabel">
+                       <property name="minimumSize">
+                        <size>
+                         <width>35</width>
+                         <height>0</height>
+                        </size>
+                       </property>
                        <property name="maximumSize">
                         <size>
-                         <width>25</width>
+                         <width>35</width>
                          <height>16777215</height>
                         </size>
                        </property>
@@ -853,6 +875,9 @@ font-size: 18px
                        </property>
                        <property name="text">
                         <string>0</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                        </property>
                       </widget>
                      </item>
@@ -935,9 +960,15 @@ font-size: 18px
                      </item>
                      <item>
                       <widget class="QLabel" name="frequencyLabel">
+                       <property name="minimumSize">
+                        <size>
+                         <width>35</width>
+                         <height>0</height>
+                        </size>
+                       </property>
                        <property name="maximumSize">
                         <size>
-                         <width>25</width>
+                         <width>35</width>
                          <height>16777215</height>
                         </size>
                        </property>
@@ -948,6 +979,9 @@ font-size: 18px
                        </property>
                        <property name="text">
                         <string>1</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                        </property>
                       </widget>
                      </item>
@@ -1030,9 +1064,15 @@ font-size: 18px
                      </item>
                      <item>
                       <widget class="QLabel" name="distanceLabel">
+                       <property name="minimumSize">
+                        <size>
+                         <width>35</width>
+                         <height>0</height>
+                        </size>
+                       </property>
                        <property name="maximumSize">
                         <size>
-                         <width>25</width>
+                         <width>35</width>
                          <height>16777215</height>
                         </size>
                        </property>
@@ -1043,6 +1083,9 @@ font-size: 18px
                        </property>
                        <property name="text">
                         <string>0</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                        </property>
                       </widget>
                      </item>
@@ -1084,6 +1127,12 @@ font-size: 18px
                </item>
                <item>
                 <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <property name="leftMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>10</number>
+                 </property>
                  <item>
                   <widget class="QPushButton" name="minusButton">
                    <property name="minimumSize">
@@ -1212,7 +1261,7 @@ font-size: 24px
                <item>
                 <layout class="QVBoxLayout" name="verticalLayout_10">
                  <property name="leftMargin">
-                  <number>0</number>
+                  <number>10</number>
                  </property>
                  <property name="rightMargin">
                   <number>0</number>
@@ -1289,85 +1338,106 @@ QComboBox QAbstractItemView {
                 </layout>
                </item>
                <item>
-                <widget class="QLabel" name="label_11">
-                 <property name="styleSheet">
-                  <string notr="true">font-size: 18px
+                <widget class="QFrame" name="radiusFrame">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_21">
+                  <item>
+                   <widget class="QLabel" name="label_11">
+                    <property name="styleSheet">
+                     <string notr="true">font-size: 18px
 </string>
-                 </property>
-                 <property name="text">
-                  <string>Radius:</string>
-                 </property>
+                    </property>
+                    <property name="text">
+                     <string>Radius:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <item>
+                     <widget class="QSlider" name="radiusSlider">
+                      <property name="minimumSize">
+                       <size>
+                        <width>250</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer_6">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="radiusLabel">
+                      <property name="minimumSize">
+                       <size>
+                        <width>35</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>35</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font-size: 18px
+</string>
+                      </property>
+                      <property name="text">
+                       <string>1</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_13">
+                      <property name="maximumSize">
+                       <size>
+                        <width>22</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">font-size: 18px
+</string>
+                      </property>
+                      <property name="text">
+                       <string>cm</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
                 </widget>
-               </item>
-               <item>
-                <layout class="QHBoxLayout" name="horizontalLayout_7">
-                 <item>
-                  <widget class="QSlider" name="radiusSlider">
-                   <property name="minimumSize">
-                    <size>
-                     <width>250</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>300</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <spacer name="horizontalSpacer_6">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="radiusLabel">
-                   <property name="maximumSize">
-                    <size>
-                     <width>25</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">font-size: 18px
-</string>
-                   </property>
-                   <property name="text">
-                    <string>1</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QLabel" name="label_13">
-                   <property name="maximumSize">
-                    <size>
-                     <width>22</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">font-size: 18px
-</string>
-                   </property>
-                   <property name="text">
-                    <string>cm</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
                </item>
               </layout>
              </widget>
