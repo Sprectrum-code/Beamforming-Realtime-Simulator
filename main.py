@@ -87,8 +87,8 @@ class MainWindow(QMainWindow):
         self.remove_reciever_button = self.findChild(QPushButton , "minusRecievingButton")
         self.remove_reciever_button.clicked.connect(self.remove_reciever)
         
-        self.mode_combobox = self.findChild(QComboBox , "comboBox")
-        self.mode_combobox.currentIndexChanged.connect(self.set_mode)
+        # self.mode_combobox = self.findChild(QComboBox , "comboBox")
+        # self.mode_combobox.currentIndexChanged.connect(self.set_mode)
         
         self.radius_slider = self.findChild(QSlider , "radiusSlider")
         self.radius_slider.setRange(1,10)
@@ -97,6 +97,9 @@ class MainWindow(QMainWindow):
         self.mode_combobox = self.findChild(QComboBox , "comboBox")
         self.mode_combobox.currentIndexChanged.connect(self.set_mode)
         # self.mode_combobox.currentText()
+
+        self.radius_frame = self.findChild(QFrame, "radiusFrame")
+        self.radius_frame.hide()
         
         self.radius_slider = self.findChild(QSlider , "radiusSlider")
         self.radius_slider.setRange(1,10)
@@ -148,8 +151,10 @@ class MainWindow(QMainWindow):
     def set_mode(self , new_mode_index):
         if(new_mode_index == 0):
             self.controller.phased_array.geometry = "Linear"
+            self.radius_frame.hide()
         elif(new_mode_index == 1):
             self.controller.phased_array.geometry = "Curvlinear"
+            self.radius_frame.show()
         self.add_transmitter()
         self.remove_transmitter()
         self.controller.set_current_beam()
