@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1038</width>
-    <height>786</height>
+    <width>1042</width>
+    <height>795</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -391,7 +391,7 @@ QComboBox QAbstractItemView {
               <string notr="true">border: none</string>
              </property>
              <property name="currentIndex">
-              <number>1</number>
+              <number>0</number>
              </property>
              <widget class="QWidget" name="recievingModePage">
               <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -471,6 +471,12 @@ font-size: 18px
                        </item>
                        <item>
                         <widget class="QLabel" name="shiftRecievingLabel">
+                         <property name="minimumSize">
+                          <size>
+                           <width>20</width>
+                           <height>0</height>
+                          </size>
+                         </property>
                          <property name="maximumSize">
                           <size>
                            <width>25</width>
@@ -575,6 +581,12 @@ font-size: 18px
                        </item>
                        <item>
                         <widget class="QLabel" name="label_20">
+                         <property name="minimumSize">
+                          <size>
+                           <width>20</width>
+                           <height>0</height>
+                          </size>
+                         </property>
                          <property name="maximumSize">
                           <size>
                            <width>25</width>
@@ -605,7 +617,7 @@ font-size: 18px
 </string>
                          </property>
                          <property name="text">
-                          <string>λ</string>
+                          <string>λ </string>
                          </property>
                         </widget>
                        </item>

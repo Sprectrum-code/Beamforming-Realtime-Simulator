@@ -2,3 +2,4 @@ numpy
 pyqtgraph
 PyQt5
 matplotlib
+copy

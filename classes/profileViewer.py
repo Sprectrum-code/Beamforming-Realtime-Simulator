@@ -43,7 +43,7 @@ class ProfileViewer(QFrame):
         self.figure.patch.set_facecolor("#1E293B")
         self.ax.patch.set_facecolor("#1E293B")
         self.ax.grid(color = "gray")
-        self.ax.tick_params(axis='both', colors='blue')  # Set tick label color
+        self.ax.tick_params(axis='both', colors='white')  # Set tick label color
         # self.ax.set_rticks([0.5, 1, 1.5], color='purple') 
         # self.ax.set_theta_direction(-1)
         self.logger.info("Initialized the beam profile viewer")

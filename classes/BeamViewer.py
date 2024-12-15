@@ -48,11 +48,12 @@ class BeamViewer(pg.ImageView):
                 scaled_y = reciever.y_posision * (self.current_phased_array.y_grid_size)/self.current_phased_array.current_y_range
                 self.add_red_dot(scaled_x, scaled_y)
             
-        colormap = pg.ColorMap([0, 0.5, 1], [(255, 0, 0), (0, 0, 255), (255, 0, 0)])
+        colormap = pg.ColorMap([0 ,0.5 , 1], [(255, 0, 0), (0, 0, 255), (255, 0, 0)])
             
             
         self.current_phased_array.wave_map = amplitude
-        image  = pg.ImageItem(amplitude.T)
+        amplitude_normalized = (amplitude - np.min(amplitude)) / (np.max(amplitude) - np.min(amplitude))
+        image  = pg.ImageItem(amplitude_normalized.T)
         image.setLookupTable(colormap.getLookupTable())
 
         self.getView().addItem(image)
