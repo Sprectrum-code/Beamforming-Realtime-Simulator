@@ -198,3 +198,1107 @@
 2024-12-15 16:51:49,004 - BeamViewer - INFO - updating the map with current mode Recieving Mode
 2024-12-15 16:51:49,050 - Controller - INFO - Updated the current beam
 2024-12-15 16:51:49,050 - MainWindow - INFO - Receivers phase shift changed to -1.6755160819145563
+2024-12-15 22:53:59,623 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 22:53:59,646 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 22:53:59,776 - Controller - INFO - Updated the current beam
+2024-12-15 22:53:59,835 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 22:53:59,962 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 22:54:46,273 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 22:56:52,586 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 22:56:52,597 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 22:56:52,706 - Controller - INFO - Updated the current beam
+2024-12-15 22:56:52,751 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 22:56:52,867 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 22:57:03,750 - MainWindow - INFO - Changed the Program mode to Receiving
+2024-12-15 22:57:03,758 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 22:57:03,861 - Controller - INFO - Updated the current beam
+2024-12-15 23:03:04,080 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:03:04,101 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:03:04,186 - Controller - INFO - Updated the current beam
+2024-12-15 23:03:04,226 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:03:04,346 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:03:07,826 - MainWindow - INFO - Changed the Program mode to Receiving
+2024-12-15 23:03:07,837 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:03:07,931 - Controller - INFO - Updated the current beam
+2024-12-15 23:03:08,916 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:03:08,916 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 2
+2024-12-15 23:03:08,943 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:03:09,041 - Controller - INFO - Updated the current beam
+2024-12-15 23:03:09,041 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:03:09,041 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 3
+2024-12-15 23:03:09,056 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:03:09,139 - Controller - INFO - Updated the current beam
+2024-12-15 23:03:09,139 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:03:09,139 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 4
+2024-12-15 23:03:09,159 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:03:09,242 - Controller - INFO - Updated the current beam
+2024-12-15 23:03:09,242 - PhasedArray - INFO - Transmitters linear distances updated starting from -1.0
+2024-12-15 23:03:09,242 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 5
+2024-12-15 23:03:09,269 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:03:09,373 - Controller - INFO - Updated the current beam
+2024-12-15 23:03:09,411 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:03:09,500 - Controller - INFO - Updated the current beam
+2024-12-15 23:03:49,936 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:04:36,417 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:05:22,789 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:06:07,946 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:06:08,766 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:06:08,829 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:06:08,920 - Controller - INFO - Updated the current beam
+2024-12-15 23:06:08,920 - MainWindow - INFO - Changed the distance between recievers to 0.25
+2024-12-15 23:06:08,965 - PhasedArray - INFO - Transmitters linear distances updated starting from -3.5
+2024-12-15 23:06:09,029 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:06:09,107 - Controller - INFO - Updated the current beam
+2024-12-15 23:06:09,107 - MainWindow - INFO - Changed the distance between recievers to 1.75
+2024-12-15 23:06:09,146 - PhasedArray - INFO - Transmitters linear distances updated starting from -6.5
+2024-12-15 23:06:09,235 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:06:09,320 - Controller - INFO - Updated the current beam
+2024-12-15 23:06:09,321 - MainWindow - INFO - Changed the distance between recievers to 3.25
+2024-12-15 23:06:09,321 - PhasedArray - INFO - Transmitters linear distances updated starting from -7.0
+2024-12-15 23:06:09,413 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:06:09,506 - Controller - INFO - Updated the current beam
+2024-12-15 23:06:09,506 - MainWindow - INFO - Changed the distance between recievers to 3.5
+2024-12-15 23:06:09,569 - PhasedArray - INFO - Transmitters linear distances updated starting from -10.0
+2024-12-15 23:06:09,683 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:06:09,773 - Controller - INFO - Updated the current beam
+2024-12-15 23:06:09,773 - MainWindow - INFO - Changed the distance between recievers to 5.0
+2024-12-15 23:06:12,167 - PhasedArray - INFO - Transmitters linear distances updated starting from -9.0
+2024-12-15 23:06:12,296 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:06:12,378 - Controller - INFO - Updated the current beam
+2024-12-15 23:06:12,378 - MainWindow - INFO - Changed the distance between recievers to 4.5
+2024-12-15 23:06:12,431 - PhasedArray - INFO - Transmitters linear distances updated starting from -1.0
+2024-12-15 23:06:12,570 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:06:12,649 - Controller - INFO - Updated the current beam
+2024-12-15 23:06:12,649 - MainWindow - INFO - Changed the distance between recievers to 0.5
+2024-12-15 23:06:12,697 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.0
+2024-12-15 23:06:12,842 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:06:12,936 - Controller - INFO - Updated the current beam
+2024-12-15 23:06:12,936 - MainWindow - INFO - Changed the distance between recievers to 0.0
+2024-12-15 23:06:55,936 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:07:13,552 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:07:13,592 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:07:13,730 - Controller - INFO - Updated the current beam
+2024-12-15 23:07:13,787 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:07:13,943 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:07:15,822 - MainWindow - INFO - Changed the Program mode to Receiving
+2024-12-15 23:07:15,827 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:07:15,917 - Controller - INFO - Updated the current beam
+2024-12-15 23:07:16,897 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:07:16,897 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 2
+2024-12-15 23:07:16,916 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:07:17,041 - Controller - INFO - Updated the current beam
+2024-12-15 23:07:17,041 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:07:17,041 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 3
+2024-12-15 23:07:17,046 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:07:17,126 - Controller - INFO - Updated the current beam
+2024-12-15 23:07:17,126 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:07:17,126 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 4
+2024-12-15 23:07:17,137 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:07:17,222 - Controller - INFO - Updated the current beam
+2024-12-15 23:07:17,222 - PhasedArray - INFO - Transmitters linear distances updated starting from -1.0
+2024-12-15 23:07:17,222 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 5
+2024-12-15 23:07:17,246 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:07:17,338 - Controller - INFO - Updated the current beam
+2024-12-15 23:07:17,338 - PhasedArray - INFO - Transmitters linear distances updated starting from -1.0
+2024-12-15 23:07:17,367 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:07:17,447 - Controller - INFO - Updated the current beam
+2024-12-15 23:07:17,447 - MainWindow - INFO - Changed the distance between recievers to 0.5
+2024-12-15 23:07:17,500 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:07:17,587 - Controller - INFO - Updated the current beam
+2024-12-15 23:08:08,101 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:08:08,202 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:08:08,487 - Controller - INFO - Updated the current beam
+2024-12-15 23:08:08,677 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:08:08,856 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:08:12,510 - MainWindow - INFO - Changed the Program mode to Receiving
+2024-12-15 23:08:12,517 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:08:12,635 - Controller - INFO - Updated the current beam
+2024-12-15 23:08:13,606 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:08:13,606 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 2
+2024-12-15 23:08:13,622 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:08:13,767 - Controller - INFO - Updated the current beam
+2024-12-15 23:08:13,767 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:08:13,767 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 3
+2024-12-15 23:08:13,778 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:08:13,867 - Controller - INFO - Updated the current beam
+2024-12-15 23:08:13,867 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:08:13,867 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 4
+2024-12-15 23:08:13,886 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:08:13,986 - Controller - INFO - Updated the current beam
+2024-12-15 23:08:13,986 - PhasedArray - INFO - Transmitters linear distances updated starting from -1.0
+2024-12-15 23:08:13,986 - PhasedArray - INFO - New Reciever Added , Total Number of Receivers = 5
+2024-12-15 23:08:14,009 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:08:14,119 - Controller - INFO - Updated the current beam
+2024-12-15 23:08:14,119 - PhasedArray - INFO - Transmitters linear distances updated starting from -1.0
+2024-12-15 23:08:14,161 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:08:14,267 - Controller - INFO - Updated the current beam
+2024-12-15 23:08:14,267 - MainWindow - INFO - Changed the distance between recievers to 0.5
+2024-12-15 23:08:14,322 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 23:08:14,431 - Controller - INFO - Updated the current beam
+2024-12-15 23:15:58,147 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:15:58,177 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:15:58,333 - Controller - INFO - Updated the current beam
+2024-12-15 23:15:58,387 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:15:58,547 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:16:09,172 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:09,287 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:09,287 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:16:09,287 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:16:09,302 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:09,417 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:09,417 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:16:09,417 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:16:09,417 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:16:09,437 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:09,526 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:09,526 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:16:09,526 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:16:09,541 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:09,697 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:09,697 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:16:09,697 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:16:09,706 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:09,907 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:09,907 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:16:09,907 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:16:09,927 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:10,173 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:10,207 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:10,459 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:40,212 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:40,479 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:40,479 - MainWindow - INFO - Frequency changed to 3
+2024-12-15 23:16:40,611 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:40,869 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:40,869 - MainWindow - INFO - Frequency changed to 17
+2024-12-15 23:16:44,512 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:44,787 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:44,787 - MainWindow - INFO - Frequency changed to 20
+2024-12-15 23:16:44,937 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:45,197 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:45,197 - MainWindow - INFO - Frequency changed to 9
+2024-12-15 23:16:45,377 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:45,637 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:45,640 - MainWindow - INFO - Frequency changed to 1
+2024-12-15 23:16:49,647 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:49,892 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:49,892 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:16:50,087 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:50,330 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:50,330 - MainWindow - INFO - Frequency changed to 6
+2024-12-15 23:16:50,537 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:50,789 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:50,789 - MainWindow - INFO - Frequency changed to 9
+2024-12-15 23:16:50,797 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:16:51,026 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:51,287 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:51,287 - MainWindow - INFO - Frequency changed to 11
+2024-12-15 23:16:51,537 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:51,777 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:51,777 - MainWindow - INFO - Frequency changed to 14
+2024-12-15 23:16:51,977 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:52,217 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:52,221 - MainWindow - INFO - Frequency changed to 15
+2024-12-15 23:16:55,019 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:55,297 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:55,297 - MainWindow - INFO - Frequency changed to 20
+2024-12-15 23:16:55,587 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:55,827 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:55,827 - MainWindow - INFO - Frequency changed to 1
+2024-12-15 23:16:56,787 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:57,027 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:57,027 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:16:57,887 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:58,127 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:58,127 - MainWindow - INFO - Frequency changed to 20
+2024-12-15 23:16:58,427 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:58,677 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:58,677 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:16:58,990 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:16:59,259 - Controller - INFO - Updated the current beam
+2024-12-15 23:16:59,259 - MainWindow - INFO - Frequency changed to 1
+2024-12-15 23:16:59,847 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:17:00,107 - Controller - INFO - Updated the current beam
+2024-12-15 23:17:00,107 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:18:48,771 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:18:48,796 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:48,917 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:48,967 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:18:49,135 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:18:55,347 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:55,457 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:55,457 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:18:55,457 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:18:55,467 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:55,567 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:55,567 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:18:55,567 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:18:55,567 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:18:55,587 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:55,671 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:55,671 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:18:55,671 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:18:55,687 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:55,799 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:55,807 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:18:55,807 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:18:55,817 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:55,989 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:55,989 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:18:55,989 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:18:56,007 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:56,217 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:56,247 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:56,492 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:59,257 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:18:59,257 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:18:59,322 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:59,410 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:59,410 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:18:59,410 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:18:59,458 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:59,587 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:59,587 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:18:59,587 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:18:59,648 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:18:59,817 - Controller - INFO - Updated the current beam
+2024-12-15 23:18:59,817 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:18:59,817 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:18:59,877 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:00,087 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:00,087 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:00,087 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:19:00,165 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:00,397 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:00,397 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:00,397 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:19:00,488 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:00,777 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:00,777 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:00,777 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:19:00,887 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:01,207 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:01,207 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:01,207 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:19:01,347 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:01,697 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:01,697 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:01,697 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:19:01,867 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:02,268 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:02,268 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:02,268 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:19:02,442 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:02,870 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:02,877 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:02,877 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 11
+2024-12-15 23:19:03,097 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:03,587 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:03,587 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:03,587 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 12
+2024-12-15 23:19:03,847 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:04,467 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:04,469 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:04,469 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 13
+2024-12-15 23:19:04,762 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:05,669 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:05,669 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:05,669 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 14
+2024-12-15 23:19:06,287 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:07,002 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:07,002 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:07,002 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 15
+2024-12-15 23:19:07,587 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:08,617 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:08,617 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:19:08,617 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 16
+2024-12-15 23:19:09,737 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:19:10,777 - Controller - INFO - Updated the current beam
+2024-12-15 23:19:11,632 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:12,927 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:23:12,937 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:13,097 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:13,154 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:23:13,303 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:23:17,802 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:17,927 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:17,930 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:23:17,930 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:23:17,941 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:18,027 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:18,027 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:23:18,027 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:23:18,038 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:18,130 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:18,130 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:23:18,130 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:23:18,130 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:23:18,142 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:18,245 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:18,245 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:23:18,245 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:23:18,261 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:18,400 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:18,400 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:23:18,400 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:23:18,417 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:18,577 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:18,577 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:23:18,577 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:23:18,597 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:18,797 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:18,828 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:19,027 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:21,887 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:21,957 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:22,167 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:22,167 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:23:22,167 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:22,167 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:23:22,227 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:22,310 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:22,310 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:22,310 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:23:22,387 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:22,517 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:22,517 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:22,517 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:23:22,587 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:22,747 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:22,747 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:22,747 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:23:22,827 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:23,027 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:23,027 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:23,027 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:23:23,112 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:23,339 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:23,347 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:23,347 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:23:23,455 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:23,721 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:23,721 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:23,721 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:23:23,837 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:24,147 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:24,147 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:24,147 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:23:24,297 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:24,656 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:24,657 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:24,657 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:23:24,832 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:25,227 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:25,227 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:25,234 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:23:25,437 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:25,877 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:25,877 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:25,877 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 11
+2024-12-15 23:23:26,097 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:26,597 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:26,599 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:26,599 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 12
+2024-12-15 23:23:26,858 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:27,447 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:27,447 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:27,447 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 13
+2024-12-15 23:23:27,752 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:28,497 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:28,502 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:28,502 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 14
+2024-12-15 23:23:28,907 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:29,527 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:29,527 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:29,527 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 15
+2024-12-15 23:23:29,967 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:30,617 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:30,617 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:23:30,617 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 16
+2024-12-15 23:23:31,227 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:31,907 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:32,612 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:33,287 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:33,667 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.0
+2024-12-15 23:23:34,157 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:34,887 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:34,887 - MainWindow - INFO - Changed the distance between transmitters to 0.0
+2024-12-15 23:23:51,567 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.0
+2024-12-15 23:23:52,167 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:52,987 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:52,987 - MainWindow - INFO - Changed the radius of transmitters' circle to 9
+2024-12-15 23:23:52,987 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.0
+2024-12-15 23:23:53,637 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:54,467 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:54,467 - MainWindow - INFO - Changed the radius of transmitters' circle to 9
+2024-12-15 23:23:54,595 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.0
+2024-12-15 23:23:55,278 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:56,047 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:56,047 - MainWindow - INFO - Changed the radius of transmitters' circle to 3
+2024-12-15 23:23:56,047 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.0
+2024-12-15 23:23:56,752 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:57,527 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:57,527 - MainWindow - INFO - Changed the radius of transmitters' circle to 3
+2024-12-15 23:23:58,487 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:23:59,279 - Controller - INFO - Updated the current beam
+2024-12-15 23:23:59,279 - MainWindow - INFO - Transmitters phase shift changed to -3.1415926535897927
+2024-12-15 23:25:57,207 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:25:57,217 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:25:57,307 - Controller - INFO - Updated the current beam
+2024-12-15 23:25:57,367 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:25:57,528 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:26:02,007 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:02,018 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:02,141 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:02,147 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:26:02,147 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:02,160 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:02,242 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:02,244 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:26:02,247 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:02,336 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:02,336 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:26:02,336 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:02,336 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:26:02,347 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:02,427 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:02,427 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:02,427 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:26:02,442 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:02,557 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:02,557 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:02,557 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:26:02,577 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:02,734 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:02,736 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:02,736 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:26:02,762 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:02,947 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:02,947 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:02,947 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:26:02,985 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:03,212 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:03,212 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:03,212 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:26:03,257 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:03,517 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:03,517 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:03,517 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:26:03,575 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:03,868 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:03,868 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:03,868 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:26:03,939 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:04,258 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:04,258 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:04,258 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:26:04,369 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:04,707 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:04,707 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:04,707 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:26:04,844 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:05,238 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:05,238 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:05,238 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 11
+2024-12-15 23:26:05,395 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:06,161 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:06,162 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:06,162 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 12
+2024-12-15 23:26:06,365 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:06,853 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:06,857 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:06,857 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 13
+2024-12-15 23:26:07,086 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:08,052 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:08,052 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:08,052 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 14
+2024-12-15 23:26:08,447 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:09,203 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:09,203 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:09,203 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 15
+2024-12-15 23:26:09,586 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:10,569 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:10,569 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:26:10,577 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 16
+2024-12-15 23:26:11,112 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:11,787 - Controller - INFO - Updated the current beam
+2024-12-15 23:26:12,284 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:26:12,868 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:15,225 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:15,232 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:15,320 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:15,371 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:15,592 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:20,717 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:20,727 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:20,829 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:20,829 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:27:20,829 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:20,843 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:20,947 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:20,947 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:27:20,957 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:21,043 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:21,043 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:27:21,043 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:21,043 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:27:21,048 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:21,127 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:21,132 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:21,132 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:27:21,141 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:21,251 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:21,251 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:21,251 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:27:21,271 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:21,417 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:21,423 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:21,423 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:27:21,445 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:21,635 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:21,667 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:21,864 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:35,788 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:35,793 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:35,904 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:35,948 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:36,069 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:46,309 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:46,331 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:46,463 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:46,548 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:46,705 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:27:49,207 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:49,217 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:49,326 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:49,327 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:27:49,328 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:49,334 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:49,442 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:49,442 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:27:49,447 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:49,528 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:49,528 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:27:49,528 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:49,528 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:27:49,537 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:49,617 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:49,626 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:49,626 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:27:49,637 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:49,758 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:49,758 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:49,758 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:27:49,782 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:49,937 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:49,937 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:49,937 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:27:49,962 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:50,153 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:50,154 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:50,154 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:27:50,191 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:50,408 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:50,408 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:50,408 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:27:50,462 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:50,708 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:50,708 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:50,708 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:27:50,776 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:51,059 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:51,059 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:51,059 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:27:51,145 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:51,460 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:51,460 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:51,460 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:27:51,568 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:51,917 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:51,917 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:27:51,917 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:27:52,055 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:52,432 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:52,593 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:52,986 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:57,052 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:57,457 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:57,457 - MainWindow - INFO - Transmitters phase shift changed to -0.20943951023931953
+2024-12-15 23:27:57,767 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:58,162 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:58,162 - MainWindow - INFO - Transmitters phase shift changed to -1.4660765716752369
+2024-12-15 23:27:58,502 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:58,897 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:58,897 - MainWindow - INFO - Transmitters phase shift changed to -2.5132741228718345
+2024-12-15 23:27:59,274 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:27:59,667 - Controller - INFO - Updated the current beam
+2024-12-15 23:27:59,669 - MainWindow - INFO - Transmitters phase shift changed to -2.0943951023931953
+2024-12-15 23:28:00,132 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:00,515 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:00,519 - MainWindow - INFO - Transmitters phase shift changed to -1.8849555921538759
+2024-12-15 23:28:00,949 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:01,350 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:01,351 - MainWindow - INFO - Transmitters phase shift changed to 0.20943951023931953
+2024-12-15 23:28:01,843 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:02,229 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:02,229 - MainWindow - INFO - Transmitters phase shift changed to 0.8377580409572781
+2024-12-15 23:28:23,305 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:28:23,316 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:23,398 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:23,440 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:28:23,567 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:28:27,327 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:27,327 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:27,442 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:27,442 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:28:27,442 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:27,456 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:27,557 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:27,557 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:28:27,567 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:27,637 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:27,637 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:28:27,637 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:27,637 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:28:27,657 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:27,737 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:27,737 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:27,737 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:28:27,755 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:27,878 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:27,878 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:27,878 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:28:27,899 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:28,048 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:28,057 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:28,057 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:28:28,082 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:28,274 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:28,274 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:28,275 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:28:28,303 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:28,522 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:28,522 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:28,522 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:28:28,565 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:28,807 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:28,807 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:28,807 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:28:28,863 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:29,147 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:29,155 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:29,155 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:28:29,234 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:29,557 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:29,557 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:29,557 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:28:29,659 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:30,009 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:30,009 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:28:30,009 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:28:30,141 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:30,527 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:30,709 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:31,083 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:47,574 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:48,047 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:48,047 - MainWindow - INFO - Frequency changed to 1
+2024-12-15 23:28:51,042 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:51,502 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:51,502 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:28:51,847 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:52,317 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:52,317 - MainWindow - INFO - Frequency changed to 3
+2024-12-15 23:28:52,727 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:53,197 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:53,199 - MainWindow - INFO - Frequency changed to 4
+2024-12-15 23:28:53,664 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:54,242 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:54,242 - MainWindow - INFO - Frequency changed to 3
+2024-12-15 23:28:54,684 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:28:55,139 - Controller - INFO - Updated the current beam
+2024-12-15 23:28:55,139 - MainWindow - INFO - Frequency changed to 1
+2024-12-15 23:29:03,067 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:29:03,075 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:03,187 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:03,231 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:29:03,371 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:29:05,437 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:05,526 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:05,527 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:29:05,527 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:29:05,537 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:05,642 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:05,648 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:29:05,648 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:29:05,658 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:05,741 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:05,741 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:29:05,741 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:29:05,741 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:29:05,747 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:05,840 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:05,840 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:29:05,840 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:29:05,860 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:05,977 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:05,977 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:29:05,977 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:29:06,004 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:06,157 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:06,157 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:29:06,157 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:29:06,188 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:06,368 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:06,411 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:06,597 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:51,802 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:29:51,807 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:29:51,908 - Controller - INFO - Updated the current beam
+2024-12-15 23:29:51,956 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:29:52,079 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:30:03,607 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:03,617 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:03,718 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:03,718 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:30:03,718 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:03,728 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:03,839 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:03,839 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:30:03,848 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:03,932 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:03,932 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:30:03,932 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:03,932 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:30:03,938 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:04,017 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:04,017 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:04,017 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:30:04,030 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:04,147 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:04,147 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:04,147 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:30:04,167 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:04,322 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:04,322 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:04,322 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:30:04,351 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:04,538 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:04,538 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:04,538 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:30:04,575 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:04,798 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:04,798 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:04,798 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:30:04,846 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:05,103 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:05,104 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:05,104 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:30:05,163 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:05,442 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:05,443 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:05,443 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:30:05,517 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:05,822 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:05,822 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:05,822 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:30:05,926 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:06,271 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:06,271 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:30:06,271 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:30:06,403 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:06,778 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:06,921 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:07,300 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:16,028 - PhasedArray - INFO - Transmitters linear distances updated starting from -2.25
+2024-12-15 23:30:16,227 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:16,608 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:16,612 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:30:16,612 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:30:16,612 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:30:16,840 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:16,927 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:16,927 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:30:16,927 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:30:17,190 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:17,329 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:17,329 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:30:17,329 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:30:17,603 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:17,777 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:17,777 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:30:17,777 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:30:18,071 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:18,268 - Controller - INFO - Updated the current beam
+2024-12-15 23:30:18,548 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:30:18,743 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:21,448 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:31:21,457 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:21,538 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:21,587 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:31:21,727 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:31:25,478 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:25,483 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:25,585 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:25,586 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:31:25,586 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:25,597 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:25,697 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:25,697 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:31:25,711 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:25,789 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:25,789 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:31:25,789 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:25,789 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:31:25,797 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:25,901 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:25,901 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:25,901 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:31:25,907 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:26,021 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:26,028 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:26,028 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:31:26,043 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:26,207 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:26,212 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:26,212 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:31:26,241 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:26,423 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:26,423 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:26,423 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:31:26,455 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:26,672 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:26,676 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:26,676 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:31:26,719 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:26,981 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:26,981 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:26,981 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:31:27,046 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:27,318 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:27,321 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:27,321 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:31:27,400 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:27,707 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:27,707 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:27,707 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:31:27,811 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:28,157 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:28,157 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:31:28,157 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:31:28,295 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:28,677 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:28,837 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:29,212 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:33,537 - PhasedArray - INFO - Transmitters linear distances updated starting from -2.25
+2024-12-15 23:31:33,740 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:34,103 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:34,103 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:31:34,103 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:31:34,103 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:31:34,332 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:34,422 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:34,422 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:31:34,422 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:31:34,665 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:34,768 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:34,768 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:31:34,768 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:31:34,996 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:35,148 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:35,148 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:31:35,148 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:31:35,398 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:35,658 - Controller - INFO - Updated the current beam
+2024-12-15 23:31:35,942 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:31:36,228 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:06,631 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:33:06,689 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:06,942 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:07,068 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:33:07,236 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:33:09,067 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:09,079 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:09,189 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:09,189 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:33:09,189 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:09,204 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:09,312 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:09,312 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:33:09,318 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:09,408 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:09,408 - MainWindow - INFO - Frequency changed to 2
+2024-12-15 23:33:09,408 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:09,408 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:33:09,419 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:09,498 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:09,498 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:09,498 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:33:09,518 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:09,637 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:09,637 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:09,637 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:33:09,658 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:09,808 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:09,808 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:09,808 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:33:09,836 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:10,018 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:10,018 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:10,018 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:33:10,051 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:10,280 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:10,280 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:10,280 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:33:10,326 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:10,578 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:10,581 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:10,581 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:33:10,641 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:10,918 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:10,918 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:10,918 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:33:11,002 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:11,328 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:11,328 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:11,328 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:33:11,446 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:11,808 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:11,808 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:33:11,808 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:33:11,945 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:12,331 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:12,488 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:12,877 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:15,007 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.0
+2024-12-15 23:33:15,215 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:15,668 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:15,668 - MainWindow - INFO - Changed the distance between transmitters to 0.0
+2024-12-15 23:33:15,668 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.0
+2024-12-15 23:33:15,891 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:16,318 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:16,318 - MainWindow - INFO - Changed the distance between transmitters to 0.0
+2024-12-15 23:33:16,568 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:16,651 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:52,258 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:33:52,268 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:33:52,338 - Controller - INFO - Updated the current beam
+2024-12-15 23:33:52,377 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:33:52,508 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:34:01,097 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:34:01,107 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:01,208 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:01,209 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:34:01,211 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:34:01,228 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:01,332 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:01,332 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:34:01,332 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:34:01,332 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:34:01,342 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:01,423 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:01,428 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:34:01,428 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:34:01,437 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:01,538 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:01,538 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:34:01,538 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:34:01,550 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:01,693 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:01,693 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:34:01,693 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:34:01,717 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:01,903 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:01,934 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:02,102 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:53,559 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:34:53,568 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:53,628 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:53,683 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:34:53,817 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 23:34:56,747 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:34:56,753 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:56,838 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:56,847 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:34:56,847 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:34:56,861 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:56,948 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:56,948 - MainWindow - INFO - Changed the distance between transmitters to 0.5
+2024-12-15 23:34:56,948 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:34:56,948 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:34:56,960 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:57,028 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:57,028 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.25
+2024-12-15 23:34:57,028 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:34:57,048 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:57,158 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:57,158 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.5
+2024-12-15 23:34:57,158 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:34:57,168 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:57,307 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:57,307 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.75
+2024-12-15 23:34:57,307 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:34:57,335 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:57,508 - Controller - INFO - Updated the current beam
+2024-12-15 23:34:57,540 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:34:57,708 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:01,697 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:01,755 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:01,958 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:01,958 - MainWindow - INFO - Changed the radius of transmitters' circle to 10
+2024-12-15 23:35:01,958 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:01,958 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:35:02,012 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:02,093 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:02,093 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:02,097 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 2
+2024-12-15 23:35:02,166 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:02,283 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:02,283 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:02,283 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 3
+2024-12-15 23:35:02,348 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:02,493 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:02,493 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:02,493 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 4
+2024-12-15 23:35:02,571 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:02,758 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:02,758 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:02,758 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 5
+2024-12-15 23:35:02,849 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:03,058 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:03,058 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:03,058 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 6
+2024-12-15 23:35:03,157 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:03,388 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:03,388 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:03,388 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 7
+2024-12-15 23:35:03,513 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:03,807 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:03,807 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:03,807 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 8
+2024-12-15 23:35:03,943 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:04,250 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:04,250 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:04,250 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 9
+2024-12-15 23:35:04,421 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:04,758 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:04,758 - PhasedArray - INFO - Transmitters angles distances updated with delta theta 0.05
+2024-12-15 23:35:04,758 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 10
+2024-12-15 23:35:04,940 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:05,308 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:05,517 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:05,870 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:12,158 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.0
+2024-12-15 23:35:12,399 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:12,743 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:12,743 - MainWindow - INFO - Changed the distance between transmitters to 0.0
+2024-12-15 23:35:12,748 - PhasedArray - INFO - Transmitters linear distances updated starting from -0.0
+2024-12-15 23:35:13,011 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:13,702 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:13,702 - MainWindow - INFO - Changed the distance between transmitters to 0.0
+2024-12-15 23:35:13,702 - PhasedArray - INFO - Transmitters linear distances updated starting from 0.0
+2024-12-15 23:35:13,702 - PhasedArray - INFO - New Transmitter Added, Total Number of transmitter = 1
+2024-12-15 23:35:13,988 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:14,067 - Controller - INFO - Updated the current beam
+2024-12-15 23:35:14,376 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 23:35:14,460 - Controller - INFO - Updated the current beam

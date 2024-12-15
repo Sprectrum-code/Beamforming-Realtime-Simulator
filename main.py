@@ -126,7 +126,11 @@ class MainWindow(QMainWindow):
         self.radius_label = self.findChild(QLabel, "radiusLabel")
         
         
-        
+        self.loadScenario = self.findChild(QPushButton, 'loadScenario')
+        self.loadScenario.clicked.connect(self.load_scenario)
+
+        self.scenarioComboBox = self.findChild(QComboBox, 'scenarioComboBox')
+        self.scenarioComboBox.currentIndexChanged.connect(self.load_scenarios)
         
         self.controller = Controller(self.phased_array,self.beam_Viewer,self.profile_viewer)
         self.controller.phased_array = self.phased_array
@@ -256,6 +260,55 @@ class MainWindow(QMainWindow):
             self.phased_array.transmitters_list.append(Reciver())
             self.number_of__recievers_label.setText('1')
         self.controller.set_current_beam()
+
+
+    def load_scenario(self):
+        for _ in range(4):
+            self.controller.add_transmitter(0.5, 0)
+        
+        self.reciver_distance_slider.setValue(2)
+        self.number_of__recievers_label.setText('4')
+        self.controller.set_current_beam()
+
+    def load_scenarios(self):
+        if self.scenarioComboBox.currentText() == 'Tumor Ablation':
+            self.controller.phased_array.geometry = "Curvlinear"
+            self.radius_frame.show()
+            self.radius_slider.setValue(10)
+            self.distance_slider.setValue(2)
+            self.number_of_transmetters_label.setText('10')
+            self.set_radius()
+            self.controller.phased_array.current_frequency = 1
+            self.frequency_slider.setValue(0)
+            self.controller.phased_array.transmitters_list.clear()
+            for _ in range(10):
+                self.controller.add_transmitter(0.5, 10)
+            self.controller.set_current_beam()
+
+        if self.scenarioComboBox.currentText() == 'Ultrasound':
+            self.controller.phased_array.geometry = "Linear"
+            self.radius_frame.hide()
+            self.controller.phased_array.current_frequency = 1
+            self.frequency_slider.setValue(0)
+            self.distance_slider.setValue(2)
+            self.number_of_transmetters_label.setText('4')
+            self.set_distance_between_transmitters()
+            self.controller.phased_array.transmitters_list.clear()
+            for _ in range(4):
+                self.controller.add_transmitter(0.5, 0)
+            self.controller.set_current_beam()
+
+        if self.scenarioComboBox.currentText() == 'Custom':
+            self.controller.phased_array.geometry = "Linear"
+            self.radius_frame.hide()
+            self.controller.phased_array.current_frequency = 1
+            self.frequency_slider.setValue(0)
+            self.distance_slider.setValue(0)
+            self.number_of_transmetters_label.setText('1')
+            self.set_distance_between_transmitters()
+            self.controller.phased_array.transmitters_list.clear()
+            self.controller.add_transmitter(0.5, 0)
+            self.controller.set_current_beam()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
