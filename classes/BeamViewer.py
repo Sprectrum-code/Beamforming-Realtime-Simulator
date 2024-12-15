@@ -27,7 +27,7 @@ class BeamViewer(pg.ImageView):
         amplitude = np.zeros_like(x_mesh)
         self.clear_red_dots()
         print(self.current_mode)
-        self.logger.info(f'updating the map with curren mode {self.current_mode}')
+        self.logger.info(f'updating the map with current mode {self.current_mode}')
         
         if self.current_mode == "Transmitting Mode":
             for i, transmitter in enumerate(self.current_phased_array.transmitters_list):

@@ -13,8 +13,15 @@ from copy import deepcopy
 import numpy as np
 from classes.transmetter import Transmitter
 from classes.reciver import Reciver
+import logging
 compile_qrc()
 
+logging.basicConfig(
+    filename='app.log',
+    filemode='a',  # Append mode
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -22,6 +29,7 @@ class MainWindow(QMainWindow):
         loadUi('main.ui', self)
         self.setWindowTitle('Beam Forming')
         self.setWindowIcon(QIcon('icons_setup\icons\logo.png'))
+        self.logger = logging.getLogger(self.__class__.__name__)
 
         logoPixmap = QPixmap('icons_setup\icons\logo2.png')
 
@@ -135,25 +143,31 @@ class MainWindow(QMainWindow):
         self.phased_array.current_frequency = deepcopy(new_frequency)
         self.controller.set_current_beam()
         self.frequency_label.setText(str(new_frequency))
+        self.logger.info(f"Frequency changed to {new_frequency}")
         
     def change_phase(self):
         new_phase = self.phase_shift_values[self.phase_shift_slider.value()]
         self.phased_array.phase_shift = deepcopy(new_phase)
         self.controller.set_current_beam()
-        self.phase_shift_label.setText(str(new_phase/np.pi))
+        self.phase_shift_label.setText(f"{new_phase / np.pi:.1f}")
+        self.logger.info(f"Transmitters phase shift changed to {new_phase}")
         
     def change_reciver_phase(self):
         new_phase = self.phase_shift_values[self.reciver_phase_shift_slider.value()]
         self.phased_array.reciver_phase_shift = deepcopy(new_phase)
         self.controller.set_current_beam()
-        self.phase_shift_receiving_label.setText(str(new_phase/np.pi))
-    
+        self.phase_shift_receiving_label.setText(f"{new_phase / np.pi:.1f}")
+        self.logger.info(f"Receivers phase shift changed to {new_phase}")
+
     def set_mode(self , new_mode_index):
         if(new_mode_index == 0):
             self.controller.phased_array.geometry = "Linear"
             self.radius_frame.hide()
+            self.logger.info("Changed the Transmitters' mode to Linear")
+            
         elif(new_mode_index == 1):
             self.controller.phased_array.geometry = "Curvlinear"
+            self.logger.info("Changed the Transmitters' mode to Curvlinear")
             self.radius_frame.show()
         self.add_transmitter()
         self.remove_transmitter()
@@ -168,10 +182,12 @@ class MainWindow(QMainWindow):
             elif (self.controller.phased_array.geometry == "Curvlinear"):
                 self.controller.calcualte_angles(distance_between_transmitters ,circle_radius )
             self.distance_transmitters_label.setText(str(distance_between_transmitters))
+            self.logger.info(f"Changed the distance between transmitters to {distance_between_transmitters}")
+
         else:
             self.controller.calculate_linear_distance(distance_between_transmitters)
             self.distance_recievers_label.setText(str(distance_between_transmitters))
-            
+            self.logger.info(f"Changed the distance between recievers to {distance_between_transmitters}")
     
     def set_radius(self):
         circle_radius = self.radius_slider.sliderPosition()
@@ -183,6 +199,7 @@ class MainWindow(QMainWindow):
             self.controller.phased_array.calcualte_angles(distance_between_transmitters , circle_radius)
         self.controller.set_current_beam()
         self.radius_label.setText(str(circle_radius))
+        self.logger.info(f"Changed the radius of transmitters' circle to {circle_radius}")
 
     def add_transmitter(self):
         circle_radius = self.radius_slider.sliderPosition()
@@ -225,8 +242,10 @@ class MainWindow(QMainWindow):
     def change_mode(self):
         if self.transmitterRecieverModes.currentText() == 'Transmitting Mode':
             self.modesStack.setCurrentIndex(1)
+            self.logger.info("Changed the Program mode to Transmitting")
         if self.transmitterRecieverModes.currentText() == 'Recieving Mode':
             self.modesStack.setCurrentIndex(0)
+            self.logger.info("Changed the Program mode to Receiving")
             
         self.controller.phased_array.transmitters_list.clear()
             

@@ -5,7 +5,7 @@ from classes.phasedArray import PhasedArray
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from matplotlib.animation import FuncAnimation
-
+import logging
 class ProfileViewer(QFrame):
     def __init__(self):
         super().__init__()
@@ -16,7 +16,7 @@ class ProfileViewer(QFrame):
         self.frequency = 2
         self.distance_between_recievers = 1
         self.transmitter_position = (50,50)
-        
+        self.logger = logging.getLogger(self.__class__.__name__)
         self.figure = Figure()
         self.canvas = FigureCanvas(self.figure)
         
@@ -46,8 +46,9 @@ class ProfileViewer(QFrame):
         self.ax.tick_params(axis='both', colors='blue')  # Set tick label color
         # self.ax.set_rticks([0.5, 1, 1.5], color='purple') 
         # self.ax.set_theta_direction(-1)
+        self.logger.info("Initialized the beam profile viewer")
         return self.line,
-
+    
     def calculate_phase_shift(self, antenna, angle):
         dx = antenna.x_posision - self.transmitter_position[0]
         dy = antenna.y_posision - self.transmitter_position[1]

@@ -21,43 +21,21 @@ class PhasedArray():
 
         
     def add_transmitter(self , distance_between_transmitters ,radius):
-<<<<<<< HEAD
-        try: 
-            if self.current_mode == "Transmitting Mode":
-                self.transmitters_list.append(Transmitter())
-                self.logger.info(f'New transmitter added successfully')
-
-                if(self.geometry == "Linear"):
-                    self.calcualte_linear_distance(distance_between_transmitters)
-                
-                if(self.geometry == "Curvlinear"):
-                    self.calcualte_angles(distance_between_transmitters , radius)
-            else:
-                self.transmitters_list.append(Reciver())
-                self.logger.info(f'New reciever added successfully')
-
-                if(self.geometry == "Linear"):
-                    self.calcualte_linear_distance(distance_between_transmitters)
-                if(self.geometry == "Curvlinear"):
-                    self.calcualte_angles(distance_between_transmitters , radius)
-        except Exception as e:
-            self.logger.error(f'adding new transmitter/reciver caused an error {e}')
-                   
-=======
         if self.current_mode == "Transmitting Mode":
             self.transmitters_list.append(Transmitter())
             if(self.geometry == "Linear"):
                 self.calcualte_linear_distance(distance_between_transmitters)
             if(self.geometry == "Curvlinear"):
                 self.calcualte_angles(distance_between_transmitters , radius)
+            self.logger.info(f"New Transmitter Added, Total Number of transmitter = {len(self.transmitters_list)}")
         else:
             self.transmitters_list.append(Reciver())
             # if(self.geometry == "Linear"):
             self.calcualte_linear_distance(distance_between_transmitters)
             # if(self.geometry == "Curvlinear"):
             #     self.calcualte_angles(distance_between_transmitters , radius)
+            self.logger.info(f"New Reciever Added , Total Number of Receivers = {len(self.transmitters_list)}")
             
->>>>>>> 8154b9e8c3c9f71e9c197dcb8cf9a45031665679
     def remove_transmitter(self , distance_between_transmitters , radius):
         if len(self.transmitters_list) > 0 :
             self.transmitters_list.pop()

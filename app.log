@@ -1,0 +1,200 @@
+2024-12-15 16:48:27,217 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 16:48:27,224 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:48:27,269 - Controller - INFO - Updated the current beam
+2024-12-15 16:48:27,341 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 16:48:27,409 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 16:48:35,275 - MainWindow - INFO - Changed the Program mode to Receiving
+2024-12-15 16:48:35,280 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:48:35,320 - Controller - INFO - Updated the current beam
+2024-12-15 16:48:39,824 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:48:39,866 - Controller - INFO - Updated the current beam
+2024-12-15 16:48:39,866 - MainWindow - INFO - Receivers phase shift changed to -0.20943951023931953
+2024-12-15 16:48:39,917 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:48:39,957 - Controller - INFO - Updated the current beam
+2024-12-15 16:48:39,957 - MainWindow - INFO - Receivers phase shift changed to -0.41887902047863906
+2024-12-15 16:49:09,597 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 16:49:29,938 - MainWindow - INFO - Changed the Program mode to Transmitting
+2024-12-15 16:49:29,948 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:49:29,986 - Controller - INFO - Updated the current beam
+2024-12-15 16:49:31,143 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:49:31,183 - Controller - INFO - Updated the current beam
+2024-12-15 16:49:31,183 - MainWindow - INFO - Transmitters phase shift changed to 0.20943951023931953
+2024-12-15 16:49:39,007 - MainWindow - INFO - Changed the Program mode to Receiving
+2024-12-15 16:49:39,020 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:49:39,062 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:34,214 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 16:51:34,221 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:34,267 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:34,345 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 16:51:34,410 - ProfileViewer - INFO - Initialized the beam profile viewer
+2024-12-15 16:51:36,302 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:36,342 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:36,343 - MainWindow - INFO - Transmitters phase shift changed to 0.20943951023931953
+2024-12-15 16:51:36,510 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:36,553 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:36,553 - MainWindow - INFO - Transmitters phase shift changed to 0.41887902047863906
+2024-12-15 16:51:36,768 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:36,813 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:36,813 - MainWindow - INFO - Transmitters phase shift changed to 0.6283185307179586
+2024-12-15 16:51:36,951 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,000 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,000 - MainWindow - INFO - Transmitters phase shift changed to 0.8377580409572781
+2024-12-15 16:51:37,098 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,150 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,150 - MainWindow - INFO - Transmitters phase shift changed to 1.0471975511965976
+2024-12-15 16:51:37,191 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,240 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,240 - MainWindow - INFO - Transmitters phase shift changed to 1.2566370614359172
+2024-12-15 16:51:37,290 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,333 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,333 - MainWindow - INFO - Transmitters phase shift changed to 1.4660765716752369
+2024-12-15 16:51:37,380 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,428 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,428 - MainWindow - INFO - Transmitters phase shift changed to 1.6755160819145563
+2024-12-15 16:51:37,510 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,554 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,554 - MainWindow - INFO - Transmitters phase shift changed to 1.8849555921538759
+2024-12-15 16:51:37,665 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,718 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,718 - MainWindow - INFO - Transmitters phase shift changed to 2.0943951023931953
+2024-12-15 16:51:37,833 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,878 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,878 - MainWindow - INFO - Transmitters phase shift changed to 2.3038346126325147
+2024-12-15 16:51:37,935 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:37,979 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:37,979 - MainWindow - INFO - Transmitters phase shift changed to 2.5132741228718345
+2024-12-15 16:51:38,056 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:38,108 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:38,108 - MainWindow - INFO - Transmitters phase shift changed to 2.7227136331111543
+2024-12-15 16:51:38,238 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:38,283 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:38,284 - MainWindow - INFO - Transmitters phase shift changed to 2.9321531433504737
+2024-12-15 16:51:38,838 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:38,881 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:38,882 - MainWindow - INFO - Transmitters phase shift changed to 2.9321531433504737
+2024-12-15 16:51:38,946 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:38,991 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:38,992 - MainWindow - INFO - Transmitters phase shift changed to 2.5132741228718345
+2024-12-15 16:51:39,026 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:39,070 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:39,070 - MainWindow - INFO - Transmitters phase shift changed to 2.3038346126325147
+2024-12-15 16:51:39,149 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:39,207 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:39,207 - MainWindow - INFO - Transmitters phase shift changed to 1.2566370614359172
+2024-12-15 16:51:39,246 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:39,293 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:39,294 - MainWindow - INFO - Transmitters phase shift changed to 1.0471975511965976
+2024-12-15 16:51:39,378 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:39,423 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:39,423 - MainWindow - INFO - Transmitters phase shift changed to 0.20943951023931953
+2024-12-15 16:51:39,503 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:39,562 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:39,562 - MainWindow - INFO - Transmitters phase shift changed to -0.20943951023931953
+2024-12-15 16:51:39,645 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:39,689 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:39,689 - MainWindow - INFO - Transmitters phase shift changed to -0.41887902047863906
+2024-12-15 16:51:39,772 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:39,819 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:39,819 - MainWindow - INFO - Transmitters phase shift changed to -0.8377580409572781
+2024-12-15 16:51:39,907 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:39,954 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:39,954 - MainWindow - INFO - Transmitters phase shift changed to -1.0471975511965976
+2024-12-15 16:51:40,042 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:40,092 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:40,092 - MainWindow - INFO - Transmitters phase shift changed to -1.4660765716752369
+2024-12-15 16:51:40,185 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:40,238 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:40,238 - MainWindow - INFO - Transmitters phase shift changed to -1.6755160819145563
+2024-12-15 16:51:40,338 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:40,385 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:40,385 - MainWindow - INFO - Transmitters phase shift changed to -1.8849555921538759
+2024-12-15 16:51:40,482 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:40,529 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:40,529 - MainWindow - INFO - Transmitters phase shift changed to -2.0943951023931953
+2024-12-15 16:51:40,587 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:40,631 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:40,631 - MainWindow - INFO - Transmitters phase shift changed to -2.3038346126325147
+2024-12-15 16:51:40,739 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:40,783 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:40,783 - MainWindow - INFO - Transmitters phase shift changed to -2.9321531433504737
+2024-12-15 16:51:40,884 - BeamViewer - INFO - updating the map with current mode Transmitting Mode
+2024-12-15 16:51:40,927 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:40,927 - MainWindow - INFO - Transmitters phase shift changed to -3.1415926535897927
+2024-12-15 16:51:42,011 - MainWindow - INFO - Changed the Program mode to Receiving
+2024-12-15 16:51:42,074 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:42,125 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:42,947 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:42,994 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:42,994 - MainWindow - INFO - Receivers phase shift changed to 0.20943951023931953
+2024-12-15 16:51:43,104 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:43,148 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:43,148 - MainWindow - INFO - Receivers phase shift changed to 0.41887902047863906
+2024-12-15 16:51:43,214 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:43,259 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:43,259 - MainWindow - INFO - Receivers phase shift changed to 0.6283185307179586
+2024-12-15 16:51:43,434 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:43,481 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:43,481 - MainWindow - INFO - Receivers phase shift changed to 0.8377580409572781
+2024-12-15 16:51:43,609 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:43,656 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:43,656 - MainWindow - INFO - Receivers phase shift changed to 1.0471975511965976
+2024-12-15 16:51:43,785 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:43,830 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:43,830 - MainWindow - INFO - Receivers phase shift changed to 1.2566370614359172
+2024-12-15 16:51:43,956 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:44,000 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:44,000 - MainWindow - INFO - Receivers phase shift changed to 1.4660765716752369
+2024-12-15 16:51:44,143 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:44,190 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:44,190 - MainWindow - INFO - Receivers phase shift changed to 1.8849555921538759
+2024-12-15 16:51:44,269 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:44,315 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:44,315 - MainWindow - INFO - Receivers phase shift changed to 2.0943951023931953
+2024-12-15 16:51:44,750 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:44,801 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:44,801 - MainWindow - INFO - Receivers phase shift changed to 2.9321531433504737
+2024-12-15 16:51:44,933 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:44,978 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:44,979 - MainWindow - INFO - Receivers phase shift changed to 2.3038346126325147
+2024-12-15 16:51:45,115 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:45,160 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:45,161 - MainWindow - INFO - Receivers phase shift changed to 1.6755160819145563
+2024-12-15 16:51:45,298 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:45,356 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:45,356 - MainWindow - INFO - Receivers phase shift changed to 1.0471975511965976
+2024-12-15 16:51:45,505 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:45,550 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:45,550 - MainWindow - INFO - Receivers phase shift changed to 0.20943951023931953
+2024-12-15 16:51:45,691 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:45,744 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:45,745 - MainWindow - INFO - Receivers phase shift changed to -0.6283185307179586
+2024-12-15 16:51:45,894 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:45,943 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:45,943 - MainWindow - INFO - Receivers phase shift changed to -1.0471975511965976
+2024-12-15 16:51:46,036 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:46,083 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:46,083 - MainWindow - INFO - Receivers phase shift changed to -1.2566370614359172
+2024-12-15 16:51:46,236 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:46,287 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:46,287 - MainWindow - INFO - Receivers phase shift changed to -1.6755160819145563
+2024-12-15 16:51:46,385 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:46,430 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:46,431 - MainWindow - INFO - Receivers phase shift changed to -1.8849555921538759
+2024-12-15 16:51:46,594 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:46,641 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:46,641 - MainWindow - INFO - Receivers phase shift changed to -2.3038346126325147
+2024-12-15 16:51:46,817 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:46,864 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:46,865 - MainWindow - INFO - Receivers phase shift changed to -2.9321531433504737
+2024-12-15 16:51:47,029 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:47,078 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:47,078 - MainWindow - INFO - Receivers phase shift changed to -3.1415926535897927
+2024-12-15 16:51:48,578 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:48,623 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:48,623 - MainWindow - INFO - Receivers phase shift changed to -2.9321531433504737
+2024-12-15 16:51:48,788 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:48,833 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:48,833 - MainWindow - INFO - Receivers phase shift changed to -1.8849555921538759
+2024-12-15 16:51:49,004 - BeamViewer - INFO - updating the map with current mode Recieving Mode
+2024-12-15 16:51:49,050 - Controller - INFO - Updated the current beam
+2024-12-15 16:51:49,050 - MainWindow - INFO - Receivers phase shift changed to -1.6755160819145563
