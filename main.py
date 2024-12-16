@@ -111,7 +111,7 @@ class MainWindow(QMainWindow):
         
         self.radius_slider = self.findChild(QSlider , "radiusSlider")
         self.radius_slider.setRange(1,10)
-        self.radius_slider.sliderMoved.connect(self.set_radius)
+        self.radius_slider.valueChanged.connect(self.set_radius)
         
         self.reciver_distance_slider = self.findChild(QSlider, "distanceRecievingSlider")
         self.reciver_distance_slider.setMinimum(0)
@@ -274,14 +274,15 @@ class MainWindow(QMainWindow):
         if self.scenarioComboBox.currentText() == 'Tumor Ablation':
             self.controller.phased_array.geometry = "Curvlinear"
             self.radius_frame.show()
-            self.radius_slider.setValue(10)
+            self.radius_slider.setValue(16)
             self.distance_slider.setValue(2)
-            self.number_of_transmetters_label.setText('10')
+            self.number_of_transmetters_label.setText('16')
             self.set_radius()
             self.controller.phased_array.current_frequency = 1
             self.frequency_slider.setValue(0)
             self.controller.phased_array.transmitters_list.clear()
-            for _ in range(10):
+            self.mode_combobox.setCurrentIndex(1)
+            for _ in range(16):
                 self.controller.add_transmitter(0.5, 10)
             self.controller.set_current_beam()
 
