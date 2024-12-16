@@ -13,8 +13,8 @@ class PhasedArray():
         self.radius = 1
         self.current_x_range = 20
         self.current_y_range = 20
-        self.x_grid_size = 600
-        self.y_grid_size = 1000
+        self.x_grid_size = 800
+        self.y_grid_size = 800
         self.wave_map = np.zeros((1000, 1000))
         self.current_mode = "Transmitting Mode"
         self.logger = logging.getLogger(self.__class__.__name__)

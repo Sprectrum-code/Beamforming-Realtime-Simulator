@@ -33,6 +33,8 @@ class ProfileViewer(QFrame):
         # self.ax.set_title("Polar Beam Profile", va='bottom')
         self.ax.set_rticks([]) 
         self.ax.set_ylim(0, 1)
+        # self.ax.set_thetamin(-90)   # Limit angular range to 0°–180° # to be in the safe zone 
+        # self.ax.set_thetamax(90)
 
         self.animation = FuncAnimation(self.figure, self.update_plot, frames=np.arange(0, 2*np.pi, 0.01), 
                                         init_func=self.init_plot, blit=True, interval=50)

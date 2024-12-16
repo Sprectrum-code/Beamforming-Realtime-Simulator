@@ -66,7 +66,7 @@ class BeamViewer(pg.ImageView):
         
         # Add the color bar to the layout
         colorbar.axis.setScale(-1)
-        colorbar.setMinimumHeight(1000)
+        colorbar.setMinimumHeight(800)
         self.getView().addItem(colorbar)
         # self.image.setLookupTable(colormap.getLookupTable())
         self.getView().autoRange()

@@ -483,6 +483,9 @@ font-size: 18px
                            <height>16777215</height>
                           </size>
                          </property>
+                         <property name="layoutDirection">
+                          <enum>Qt::LeftToRight</enum>
+                         </property>
                          <property name="styleSheet">
                           <string notr="true">border: none;
 font-size: 18px
@@ -490,6 +493,9 @@ font-size: 18px
                          </property>
                          <property name="text">
                           <string>0</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
                          </property>
                         </widget>
                        </item>
@@ -600,6 +606,9 @@ font-size: 18px
                          </property>
                          <property name="text">
                           <string>0</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
                          </property>
                         </widget>
                        </item>
@@ -1146,7 +1155,7 @@ font-size: 18px
 </string>
                        </property>
                        <property name="text">
-                        <string>cm</string>
+                        <string>λ </string>
                        </property>
                       </widget>
                      </item>
