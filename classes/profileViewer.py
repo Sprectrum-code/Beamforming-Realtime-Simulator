@@ -31,6 +31,7 @@ class ProfileViewer(QFrame):
     
         self.ax = self.figure.add_subplot(111, polar=True)  
         # self.ax.set_title("Polar Beam Profile", va='bottom')
+        # self.ax.set_rticks([0.25, 0.5, 0.75,1]) 
         self.ax.set_rticks([]) 
         self.ax.set_ylim(0, 1)
         # self.ax.set_thetamin(-90)   # Limit angular range to 0°–180° # to be in the safe zone 
@@ -76,6 +77,8 @@ class ProfileViewer(QFrame):
             # intensity = np.abs(amplitude) ** 2  
             # normalized_intensity = intensity / np.max(intensity) 
             self.line.set_data(np.linspace(0, 2 * np.pi, 1000), beam_profile)
+            # self.ax.set_rmax(2)
+            # self.ax.set_rticks([0.5, 1, 1.5, 2])
             return self.line,
         else:
             # self.frequency = self.current_phased_array.current_frequency
@@ -92,9 +95,11 @@ class ProfileViewer(QFrame):
                 beam_profile = self.calculate_transmitters_beam_profile()
                 # angles = np.linspace(0, 2 * np.pi, 1000)
                 self.line.set_data(self.theta, beam_profile)
+                # self.ax.set_rmax(2)
             else:
                 beam_profile = self.calculate_curvilinear_transmitters_beam_profle()
-                self.line.set_data(self.theta, beam_profile)
+                self.line.set_data(self.theta+np.pi/2, beam_profile)
+                # self.ax.set_rmax(2)
 
             return self.line,
             
@@ -109,7 +114,7 @@ class ProfileViewer(QFrame):
         # self.distance_between_recievers = abs(self.current_phased_array.transmitters_list[-1].x_posision - self.current_phased_array.transmitters_list[len(self.current_phased_array.transmitters_list) - 1].x_posision) 
         for theta in angles:
             # print(self.current_phased_array.reciver_phase_shift)
-            phase_shifts = (2 * np.pi / (1/self.frequency)) * np.arange(len(self.current_phased_array.transmitters_list)) * self.distance_between_recievers *( np.sin(theta) - np.sin(self.current_phased_array.reciver_phase_shift))
+            phase_shifts = (2 * np.pi / (1/self.current_phased_array.current_frequency)) * np.arange(len(self.current_phased_array.transmitters_list)) * self.distance_between_recievers *( np.sin(theta) - np.sin(self.current_phased_array.reciver_phase_shift))
             array_response = np.sum(np.exp(1j * phase_shifts))  # Complex sum
             response.append(abs(array_response))
         response = np.array(response)
@@ -118,7 +123,7 @@ class ProfileViewer(QFrame):
     def calculate_curvilinear_transmitters_beam_profle(self):
         response = []
         angles = np.linspace(0, 2*np.pi, 1000)
-        k = 2 * np.pi / (1/self.frequency)
+        k = 2 * np.pi / (1/self.current_phased_array.current_frequency)
         for theta in angles:
             phase_shifts = []
             for i, transmitter in enumerate(self.current_phased_array.transmitters_list):

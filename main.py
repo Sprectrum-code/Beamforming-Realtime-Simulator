@@ -76,6 +76,13 @@ class MainWindow(QMainWindow):
         self.frequency_slider.setMaximum(20)
         self.frequency_slider.valueChanged.connect(self.change_frequency)
         
+        self.frequency_receiving_mode_slider = self.findChild(QSlider, "transmitterFrequencySlider")
+        self.frequency_receiving_mode_slider.setMinimum(0)
+        self.frequency_receiving_mode_slider.setMaximum(19)
+        self.frequency_receiving_mode_slider.valueChanged.connect(self.change_receivers_mode_frequency)
+        
+        self.frequency_receiving_mode_label  = self.findChild(QLabel, "label_23")
+        
         self.distance_slider = self.findChild(QSlider, "distanceSlider")
         self.distance_slider.setMinimum(0)
         self.distance_slider.setMaximum(20)
@@ -149,6 +156,13 @@ class MainWindow(QMainWindow):
         self.frequency_label.setText(str(new_frequency))
         self.logger.info(f"Frequency changed to {new_frequency}")
         
+    def change_receivers_mode_frequency(self):
+        new_frequency = self.get_frquency_slider_position(2)
+        self.phased_array.current_frequency = deepcopy(new_frequency)
+        self.controller.set_current_beam()
+        self.frequency_receiving_mode_label.setText(str(new_frequency))
+        self.logger.info(f"frequency changed to {new_frequency}")
+        
     def change_phase(self):
         new_phase = self.phase_shift_values[self.phase_shift_slider.value()]
         self.phased_array.phase_shift = deepcopy(new_phase)
@@ -185,7 +199,7 @@ class MainWindow(QMainWindow):
                 self.controller.calculate_linear_distance(distance_between_transmitters)
             elif (self.controller.phased_array.geometry == "Curvlinear"):
                 self.controller.calcualte_angles(distance_between_transmitters ,circle_radius )
-            self.distance_transmitters_label.setText(str(distance_between_transmitters))
+            self.distance_transmitters_label.setText(f"{distance_between_transmitters}")
             self.logger.info(f"Changed the distance between transmitters to {distance_between_transmitters}")
 
         else:
@@ -232,15 +246,17 @@ class MainWindow(QMainWindow):
             self.controller.remove_transmitter(distance_between_transmitters ,0)
         
     def get_distance_slider_position(self):
-        list_of_lambda_ratios = [(i/4) for i in range(0,21)]
+        list_of_lambda_ratios = [(i/8) for i in range(0,21)]
         # print(list_of_lambda_ratios[self.distance_slider.value()])
         if self.transmitterRecieverModes.currentText() == "Transmitting Mode":
             return list_of_lambda_ratios[self.distance_slider.value()]
         else:
             return list_of_lambda_ratios[self.reciver_distance_slider.value()]
     
-    def get_frquency_slider_position(self):
+    def get_frquency_slider_position(self, index = 1):
         list_of_frequencies = [i for i in range(1,21)]
+        if index == 2:
+            return list_of_frequencies[self.frequency_receiving_mode_slider.value()]
         return list_of_frequencies[self.frequency_slider.value()]
 
     def change_mode(self):
@@ -263,6 +279,7 @@ class MainWindow(QMainWindow):
 
 
     def load_scenario(self):
+        self.controller.phased_array.transmitters_list.clear()
         for _ in range(4):
             self.controller.add_transmitter(0.5, 0)
         
