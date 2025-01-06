@@ -1,4 +1,4 @@
-# Beamforming Simulator
+# Beamforming-realtime-Simulator
 ![Application Overview](assets/Group%209.png "Overview of beam forming simulator")
 
 Beamforming is a critical concept in modern technologies, spanning fields such as wireless communications, 5G, radar, sonar, and biomedical applications like ultrasound and tumor ablation. This simulator provides an interactive platform to explore the principles of beamforming, including delays, phase-shifts, and constructive/destructive interference.
@@ -48,11 +48,11 @@ Users can:
 ## Getting Started, Setup Instructions
 #### Clone the repository
 ```bash
-git clone https://github.com/Mostafaali3/Nyquist-Realtime-Sampling-Studio.git
+git clone https://github.com/Mostafaali3/Beamforming-realtime-Simulator.git
 ```
 #### Navigate to project directory
 ```bash
-cd Nyquist-Realtime-Sampling-Studio
+cd Beamforming-realtime-Simulator
 ```
 
 #### Install required packages
@@ -139,6 +139,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
     </td>
   </tr>
 </table>
----
+
 Thank you for using the Beamforming Simulator!
 
