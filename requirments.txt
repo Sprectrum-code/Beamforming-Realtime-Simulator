@@ -3,3 +3,4 @@ pyqtgraph
 PyQt5
 matplotlib
 copy
+logging
