@@ -140,5 +140,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
   </tr>
 </table>
 
+## Acknowledgments
+this projects was supervised by Dr. Tamer Basha as part of the Digital Signal Processing course at Cairo Uiversity Faculty of Engineering.
+
 Thank you for using the Beamforming Simulator!
 
